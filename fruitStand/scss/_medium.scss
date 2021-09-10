@@ -1,0 +1,30 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header h1{
+    font-size: 1.6rem;
+}
+header h2{
+    font-size: 1.3rem;
+}
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+
+.fruitBasket{
+    flex-basis: 46%;
+}
+
+/*----------- FOOTER --------------*/
+    

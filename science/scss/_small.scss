@@ -16,7 +16,7 @@ body {
 	font-family: Verdana;
 	font-size: 16px;
 }
-#headerWrapper{
+#headerWrapper {
 	background-color: #17e4b1;
 }
 header img {
@@ -37,8 +37,10 @@ header h2 {
 	font-weight: normal;
 }
 
-nav {
+#navWrapper {
 	background-color: #111;
+}
+nav {
 	clear: both;
 }
 nav ul {

@@ -21,8 +21,10 @@ header img {
 	padding-right: 15px;
 	height: 90px;
 }
-header {
+#headerWrapper{
 	background-color: #17e4b1;
+}
+header {
 	padding: 1rem 2%;
 }
 header h1 {
@@ -94,14 +96,15 @@ main figure.world figcaption {
 	font-size: .75rem;
 }
 
-footer {
-	clear: both;
-	background-color: #17e4b1;
-	text-align: center;
-	padding: 1rem 2%;
-	position: relative;
+#footerWrapper {
+	background-color: #24422b;
+	color: #fff;
 }
-
+footer {
+	clear:both;
+	padding: 1rem 2%;
+	text-align: center;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
 	content: "";

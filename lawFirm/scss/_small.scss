@@ -14,7 +14,6 @@ html {
 /* body rules */
 body {
 	font-family: Verdana;
-	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
@@ -22,7 +21,7 @@ body {
 /*------HEADER------*/
 #headerWrapper {
 	background-color: lighten(#383457, 10%);
-	padding: 1rem 2%;
+	padding: 1.5rem 2%;
 	color: #f2f2f2;
 }
 header img {
@@ -80,117 +79,117 @@ nav a:hover {
 /*------DIVS------*/
 
 /*-------------ATTORNEYS----------------*/
-.attorneys{
-	background-color: #938fb1;
-	margin: 1rem .5%;
-	padding: .5rem 0;
+.profile{
+	margin: 0;
+	padding: 1vw;
+	text-align: center;
 }
 
-.attorneys h3{
-	margin-top: 0.5rem;
-	padding: .6rem 0;
-	text-align: center;
-	font-size: 16px;
-	font-weight: 200;
+.profile h3{
+	background-color:#938fb1 ;
 	color: #f2f2f2;
 	white-space: nowrap;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 20px;
+	margin: 0  ;
 }
-.attorneys img{
-	width: 100%;
-	object-fit: contain;
-}
-.attorneys a{
-	display: block;
-	padding: .5rem 0;
-	margin: 1rem 15px;
-	text-align: center;
-	font-size: 12px;
-	background-color: #383457;
-	color: #f2f2f2;
-	text-decoration: none;
-	border-radius: 10px;
-}
-
-/*-------------LINKS----------------*/
-.tabs{
-	text-align: center;
-}
-
-/*-------------BLOG----------------*/
-.blog{
-margin: 0;	
-padding: 1vw;
-flex-wrap: nowrap !important; 
-}
-.post{
+.profile p{
 	background-color: #938fb1;
-	margin: 5px;
-	padding:0;
+	padding: 10px 5px;
+	margin: -3px 0 .5rem 0;
+}
+.profile a{
+	display: block;
+	margin:.5rem;
+	padding: 1rem 0;
+	font-size: 12px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #383457;
 }
 
-.post h4{
-	margin-top: 0;
-	padding: .5rem 10px;
-	text-align: left;
-	font-size: 24px;
-	font-weight: 200;
-	color: #f2f2f2;
-}
-.post img{
+.profile img{
 	width: 100%;
+	padding: 0;
+	margin: 0;
 	object-fit: contain;
 }
-.post p{
-	padding: 10px;
+
+
+// /*-------------LINKS----------------*/
+.tabs{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+// /*-------------BLOG----------------*/
+.blog{
+margin-right: 0;	
+padding: 1vw;
+}
+.blog img{
+	width: 100%;
+	padding-top: .5rem ;
+	object-fit: contain;
+}
+
+.blog h4{
+	background-color: #938fb1;
+    color: #f2f2f2;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem 0 .5rem;
+    margin: -3px 0 0;
+}
+.blog p{
+	background-color: #938fb1;
 	font-size: 12px;
+	padding: .5rem ;
 	margin: 0;
 }
-.post a{
-	display: block;
-	padding: .8rem;
-	text-align: center;
+.blog a{
+	margin:0;
+	padding: 1rem 0;
 	font-size: 12px;
-	background-color: #383457;
-	color: #f2f2f2;
+	text-align: center;
+	display: block;
 	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #383457;
 }
 
-
-
-/*-------------FAQ----------------*/
+ /*-------------FAQ----------------*/
 .faq{
 	margin: 0;	
-	padding: 1vw;
-	flex-wrap: nowrap !important; 	
+	padding: 1vw;	
 }
-.info{
+.faq h4{
 	background-color: #938fb1;
-	margin: 5px;
-	padding:0;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1rem 1rem 0em 1vw;
+    margin: 0.5rem 0 0;
 }
-
-.info h4{
-	margin: 0;
-	padding: .5rem 10px;
-	text-align: left;
-	font-size: 24px;
-	font-weight: 200;
-	color: #f2f2f2;
-}
-
-.info p{
-	padding: 0 10px 0 10px;
+.faq p{
+	background-color: #938fb1;
 	font-size: 12px;
+	padding: .5rem ;
 	margin: 0;
 }
-.info a{
+.faq a{
+	margin:0;
+	padding:0 1vw 1vw;
+	font-size: 12px;
+	text-align: left;
 	display: block;
-	padding: .8rem;
-	margin: 0;
-	text-align: left;
-	font-size: 12px;
-	color: #f2f2f2;
 	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #938fb1;
 }
 
 
@@ -199,7 +198,9 @@ flex-wrap: nowrap !important;
 	display: flex;
 	flex-wrap: wrap;
 }
-
+.column {
+	padding: 0 $gutter;
+}
 
 @for $i from 0 through 12 {
 	$w: ($i/12) * 100%;
@@ -212,15 +213,11 @@ flex-wrap: nowrap !important;
 .jumbotron {
 	background-color: #383457;
 	color: white;
-	margin: 1rem .5%;
+	margin: .5rem .5%;
 	p {
 		font-size: 200%;
 		padding: 2rem $gutter;
 	}
-}
-
-.column {
-	padding: 0 $gutter;
 }
 /*------SOCIAL MEDIA------*/
 .social {
@@ -232,6 +229,7 @@ flex-wrap: nowrap !important;
 }
 .fab{
 	color: #f2f2f2;
+	padding: 1rem;
 }
 
 /*------IMAGES-------*/

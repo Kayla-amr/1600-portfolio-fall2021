@@ -403,7 +403,9 @@ html {
 /* body rules */
 body {
   font-family: Verdana;
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
 
 /*------HEADER------*/
 #headerWrapper {
@@ -496,12 +498,14 @@ nav a:hover {
 
 /*-------------BLOG----------------*/
 .blog {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0; }
+  margin: 0;
+  padding: 1vw;
+  flex-wrap: nowrap !important; }
 
 .post {
-  background-color: #938fb1; }
+  background-color: #938fb1;
+  margin: 5px;
+  padding: 0; }
 
 .post h4 {
   margin-top: 0;
@@ -523,7 +527,6 @@ nav a:hover {
 .post a {
   display: block;
   padding: .8rem;
-  margin: 0;
   text-align: center;
   font-size: 12px;
   background-color: #383457;
@@ -531,9 +534,14 @@ nav a:hover {
   text-decoration: none; }
 
 /*-------------FAQ----------------*/
+.faq {
+  margin: 0;
+  padding: 1vw;
+  flex-wrap: nowrap !important; }
+
 .info {
   background-color: #938fb1;
-  margin: 1rem 0;
+  margin: 5px;
   padding: 0; }
 
 .info h4 {

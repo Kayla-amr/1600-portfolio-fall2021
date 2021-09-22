@@ -1,0 +1,260 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* body rules */
+body {
+	font-family: Verdana;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+/*------HEADER------*/
+#headerWrapper {
+	background-color: lighten(#383457, 10%);
+	padding: 1rem 2%;
+	color: #f2f2f2;
+}
+header img {
+	float: left;
+	padding-right: 15px;
+	height: 90px;
+}
+header h1 {
+	margin: 1.6rem 0 0 0;
+	font-size: 1.5rem;
+}
+header h2 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+header figure.logo {
+	float: left;
+	margin: 0 2% 0 0;
+}
+
+/*----MAIN----*/
+main{
+	background-color: lighten(#383457, 70%);
+}
+
+/*------NAVIGATION------*/
+nav{
+	background-color: #383457;
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	list-style-type: none;
+}
+nav li.active {
+	background-color: darken(#433b83, 20%);
+}
+nav a {
+	display: block;
+	padding: .8rem 0; /*44px min*/
+	color: #eee;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover {
+	background-color: lighten(#433b83, 30%);
+}
+
+
+
+/*------DIVS------*/
+
+/*-------------ATTORNEYS----------------*/
+.attorneys{
+	background-color: #938fb1;
+	margin: 1rem .5%;
+	padding: .5rem 0;
+}
+
+.attorneys h3{
+	margin-top: 0.5rem;
+	padding: .6rem 0;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 200;
+	color: #f2f2f2;
+	white-space: nowrap;
+}
+.attorneys img{
+	width: 100%;
+	object-fit: contain;
+}
+.attorneys a{
+	display: block;
+	padding: .5rem 0;
+	margin: 1rem 15px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #383457;
+	color: #f2f2f2;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+/*-------------LINKS----------------*/
+.tabs{
+	text-align: center;
+}
+
+/*-------------BLOG----------------*/
+.blog{
+margin: 0;	
+padding: 1vw;
+flex-wrap: nowrap !important; 
+}
+.post{
+	background-color: #938fb1;
+	margin: 5px;
+	padding:0;
+}
+
+.post h4{
+	margin-top: 0;
+	padding: .5rem 10px;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 200;
+	color: #f2f2f2;
+}
+.post img{
+	width: 100%;
+	object-fit: contain;
+}
+.post p{
+	padding: 10px;
+	font-size: 12px;
+	margin: 0;
+}
+.post a{
+	display: block;
+	padding: .8rem;
+	text-align: center;
+	font-size: 12px;
+	background-color: #383457;
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+
+
+/*-------------FAQ----------------*/
+.faq{
+	margin: 0;	
+	padding: 1vw;
+	flex-wrap: nowrap !important; 	
+}
+.info{
+	background-color: #938fb1;
+	margin: 5px;
+	padding:0;
+}
+
+.info h4{
+	margin: 0;
+	padding: .5rem 10px;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 200;
+	color: #f2f2f2;
+}
+
+.info p{
+	padding: 0 10px 0 10px;
+	font-size: 12px;
+	margin: 0;
+}
+.info a{
+	display: block;
+	padding: .8rem;
+	margin: 0;
+	text-align: left;
+	font-size: 12px;
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+
+/*--COLUMNS--*/
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+@for $i from 0 through 12 {
+	$w: ($i/12) * 100%;
+	.small-#{$i} {
+		flex-basis: $w;
+	}
+} //end loop
+
+
+.jumbotron {
+	background-color: #383457;
+	color: white;
+	margin: 1rem .5%;
+	p {
+		font-size: 200%;
+		padding: 2rem $gutter;
+	}
+}
+
+.column {
+	padding: 0 $gutter;
+}
+/*------SOCIAL MEDIA------*/
+.social {
+	
+	text-align: center;
+	font-size: 3rem;
+	justify-content: center;
+	margin: .5rem;
+}
+.fab{
+	color: #f2f2f2;
+}
+
+/*------IMAGES-------*/
+.column figure{
+	width: 100%;
+}
+.column figure img{
+	width: 100%;
+}
+
+/*------FOOTER------*/
+#footerWrapper {
+	clear: both;
+	background-color: lighten(#383457,10%);
+	color: #fff;
+	text-align: center;
+	padding: 1rem 2%;
+	position: relative;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

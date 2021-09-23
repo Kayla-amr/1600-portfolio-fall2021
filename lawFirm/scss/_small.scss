@@ -46,6 +46,8 @@ header figure.logo {
 /*----MAIN----*/
 main{
 	background-color: lighten(#383457, 70%);
+	margin: 0;
+	padding: 2vw;
 }
 
 /*------NAVIGATION------*/
@@ -80,9 +82,10 @@ nav a:hover {
 
 /*-------------ATTORNEYS----------------*/
 .profile{
-	margin: 0;
+	margin-bottom: -100%;
 	padding: 1vw;
 	text-align: center;
+;
 }
 
 .profile h3{
@@ -164,7 +167,7 @@ padding: 1vw;
 
  /*-------------FAQ----------------*/
 .faq{
-	margin: 0;	
+	margin: -100%;	
 	padding: 1vw;	
 }
 .faq h4{

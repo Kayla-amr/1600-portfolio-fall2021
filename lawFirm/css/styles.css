@@ -465,7 +465,7 @@ nav a:hover {
 /*------DIVS------*/
 /*-------------ATTORNEYS----------------*/
 .profile {
-  margin-bottom: -100%;
+  margin: 0;
   padding: 1vw;
   text-align: center; }
 
@@ -475,7 +475,7 @@ nav a:hover {
   white-space: nowrap;
   font-size: 16px;
   font-weight: 500;
-  padding: 20px;
+  padding: 20px 2px;
   margin: 0; }
 
 .profile p {
@@ -540,7 +540,7 @@ nav a:hover {
 
 /*-------------FAQ----------------*/
 .faq {
-  margin: -100%;
+  margin: 0;
   padding: 1vw; }
 
 .faq h4 {
@@ -573,7 +573,7 @@ nav a:hover {
   flex-wrap: wrap; }
 
 .column {
-  padding: 0 1vw; }
+  padding: 0 0.5vw; }
 
 .small-0 {
   flex-basis: 0%; }
@@ -620,7 +620,7 @@ nav a:hover {
   margin: .5rem .5%; }
   .jumbotron p {
     font-size: 200%;
-    padding: 2rem 1vw; }
+    padding: 2rem 0.5vw; }
 
 /*------SOCIAL MEDIA------*/
 .social {

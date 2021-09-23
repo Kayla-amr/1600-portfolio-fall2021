@@ -82,10 +82,9 @@ nav a:hover {
 
 /*-------------ATTORNEYS----------------*/
 .profile{
-	margin-bottom: -100%;
+	margin: 0;
 	padding: 1vw;
 	text-align: center;
-;
 }
 
 .profile h3{
@@ -94,8 +93,8 @@ nav a:hover {
 	white-space: nowrap;
 	font-size: 16px;
 	font-weight: 500;
-	padding: 20px;
-	margin: 0  ;
+	padding: 20px 2px;
+	margin: 0 ;
 }
 .profile p{
 	background-color: #938fb1;
@@ -167,7 +166,7 @@ padding: 1vw;
 
  /*-------------FAQ----------------*/
 .faq{
-	margin: -100%;	
+	margin: 0;	
 	padding: 1vw;	
 }
 .faq h4{

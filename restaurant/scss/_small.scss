@@ -16,23 +16,26 @@ body {
 	font-family: Verdana;
 	font-size: 16px;
 }
+
+#headerWrapper {
+	background-color: #b6a689;
+	padding: 1rem 2%;
+	color: #a35a07;
+}
+
 header img {
 	float: left;
 	padding-right: 15px;
 	height: 90px;
 }
-header {
-	background-color: #ede4d5;
-	padding: 1rem 2%;
-	color: #e49217;
-}
 header h1 {
-	margin: 1.6rem 0 0 0;
-	font-size: 1.5rem;
+	padding-top: 20px;
+	margin: 0;
+	font-size: 2rem;
 }
 header h2 {
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 }
 header figure.logo{
@@ -40,7 +43,7 @@ header figure.logo{
 	margin: 0 2% 0 0;
 }
 nav {
-	background-color: #b6a689;
+	background-color: #c2b8a6;
 	clear: both;
 }
 nav ul {
@@ -98,7 +101,7 @@ main figure.world figcaption {
 	font-size: .75rem;
 }
 
-footer {
+#footerWrapper {
 	clear: both;
 	background-color: #b6a689;
 	color: #fff;

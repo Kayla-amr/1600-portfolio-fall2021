@@ -9,7 +9,11 @@
     nav ul {padding-left: 2%;}
     nav li {width:auto;}
     nav a {padding: .5rem 1rem;}
-    
+    input{
+        display: inline-block;
+        padding: 0;
+        margin: .4rem 0 .4rem 40%;
+    }
     main figure { width: 31%;}
     
     div.news {column-count: 3;}

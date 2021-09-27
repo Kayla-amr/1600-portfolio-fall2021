@@ -520,11 +520,13 @@ nav a:hover {
   margin: 0;
   object-fit: contain; }
 
+/*-------------LINKS----------------*/
 .tabs {
   margin: 0;
   padding: 0;
   text-align: center; }
 
+/*-------------BLOG----------------*/
 .blog {
   margin-right: 0;
   padding: 1vw; }

@@ -425,7 +425,7 @@ header h2 {
   font-size: 1.3rem;
   font-weight: normal; }
 
-header figure.logo {
+header picture.logo {
   float: left;
   margin: 0 2% 0 0; }
 
@@ -468,22 +468,22 @@ main h1, p {
 main p {
   padding: 0 0 2% 0; }
 
-main figure.hero {
+main picture.hero {
   width: 100%;
   margin: 0; }
 
-main figure.hero img {
+main picture.hero img {
   width: 100%; }
 
-main figure.world {
+main picture.cafe {
   width: 50%;
   margin: 0 0 0 2%;
   float: right; }
 
-main figure.world img {
+main picture.cafe img {
   width: 100%; }
 
-main figure.world figcaption {
+main picture.cafe div {
   text-align: center;
   font-size: .75rem; }
 
@@ -541,5 +541,3 @@ main figure.world figcaption {
 @media only screen and (min-width: 60rem) {
   /* end of media query */ }
 /* end of media query */
-
-/*# sourceMappingURL=styles.css.map */

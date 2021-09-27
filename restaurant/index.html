@@ -38,24 +38,25 @@
     </ul>
   </nav>
 
-  <main>
-
-    <figure class="hero">
-      <img src="images/heroimage450.jpg" alt="heroimage" sizes="50vw" srcset="images/heroimage450.jpg 450w,
-              images/heroimage600.jpg 600w,
-              images/heroimage750.jpg 750w,
-              images/heroimage900.jpg 900w,
-              images/heroimage1050.jpg 1050w">
-    </figure>
-
+  <main class="clearfix">
+    <picture class="hero">
+      <source media="(max-width:450px)" srcset="images/heroimage450.jpg">
+      <source media="(max-width:600px)" srcset="images/heroimage600.jpg">
+      <source media="(max-width:750px)" srcset="images/heroimage750.jpg">
+      <source media="(max-width:900px)" srcset="images/heroimage900.jpg">
+      <source media="(max-width:1050px)" srcset="images/heroimage1050.jpg">
+      <img src="images/heroimage1050.jpg" alt="Cafe">
+    </picture>
+  
     <h1>Our Founder</h1>
+    <picture class="cafe">
+      <source media="(max-width:300px)" srcset="images/cafe300.png">
+      <source media="(max-width:450px)" srcset="images/cafe450.png">
+      <source media="(max-width:600px)" srcset="images/cafe600.png">
+      <img src="images/cafe600.png" alt="Coffee Shop">
+      <div>Kelly Mayweather</div>
+    </picture>
 
-    <figure class="world">
-      <img src="images/cafe.jpg" alt="cafe" sizes="50vw" srcset="images/cafe300.jpg 300w,
-              images/cafe450.jpg 450w,
-              images/cafe600.jpg 600w,">
-      <figcaption></figcaption>
-    </figure>
 
     <p>Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet
       dictumst porttitor,

@@ -1,0 +1,285 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* body rules */
+body {
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+}
+
+/*------HEADER------*/
+#headerWrapper {
+	background-color: lighten(#383457, 10%);
+	padding: 1.5rem 2%;
+	color: #f2f2f2;
+}
+header h1{
+	margin: 1.6rem 0 0 0;
+	font-size: 1.5rem;
+}
+header h2 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+form
+{
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0 0 0;
+	padding: 0;
+	flex-direction: row;
+}
+
+form input[type="text"]
+{
+	bottom: 0;
+	right: 0;	
+	border: 0px;
+	margin:  0 5px 0 0;
+	padding: 5px 5px;
+	color: #f2f2f2;
+	background-color: #938fb100;
+	border: 2px solid #f2f2f2;
+}
+
+form input[type="text"]:focus
+{
+	outline: 0;
+}
+
+form input[type="submit"]
+{
+	border: 0px;
+	background: none;
+	background-color: #938fb1;
+	color: #fff;
+	float: right;
+	padding: 10px;
+	border-radius: 3px;
+    cursor:pointer;
+}
+/*----MAIN----*/
+main{
+	background-color: lighten(#383457, 70%);
+	margin: 0;
+	padding: 2vw;
+}
+
+/*------NAVIGATION------*/
+nav{
+	background-color: #383457;
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	list-style-type: none;
+}
+nav li.active {
+	background-color: darken(#433b83, 20%);
+}
+nav a {
+	display: block;
+	padding: .8rem 0; /*44px min*/
+	color: #eee;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover {
+	background-color: lighten(#433b83, 30%);
+}
+
+/*------DIVS------*/
+
+/*-------------ATTORNEYS----------------*/
+.profile{
+	margin: 0;
+	padding: 1vw;
+	text-align: center;
+}
+
+.profile h3{
+	background-color:#938fb1 ;
+	color: #f2f2f2;
+	white-space: nowrap;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 20px 2px;
+	margin: 0 ;
+}
+.profile p{
+	background-color: #938fb1;
+	padding: 10px 5px;
+	margin: -4px 0 .5rem 0;
+}
+.profile a{
+	display: block;
+	margin:.5rem;
+	padding: 1rem 0;
+	font-size: 12px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #383457;
+}
+
+.profile img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	object-fit: contain;
+}
+
+
+/*-------------LINKS----------------*/
+.tabs{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ /*-------------BLOG----------------*/
+.blog{
+margin-right: 0;	
+padding: 1vw;
+}
+.blog img{
+	width: 100%;
+	padding-top: .5rem ;
+	object-fit: contain;
+}
+
+.blog h4{
+	background-color: #938fb1;
+    color: #f2f2f2;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem 0 .5rem;
+    margin: -3px 0 0;
+}
+.blog p{
+	background-color: #938fb1;
+	font-size: 12px;
+	padding: .5rem ;
+	margin: 0;
+}
+.blog a{
+	margin:0;
+	padding: 1rem 0;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #383457;
+}
+
+ /*-------------FAQ----------------*/
+.faq{
+	margin: 0;	
+	padding: 1vw;	
+}
+.faq h4{
+	background-color: #938fb1;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1vw;
+    margin: 0.5rem 0 0;
+}
+.faq p{
+	background-color: #938fb1;
+	font-size: 12px;
+	padding: 0 5px ;
+	margin: 0;
+}
+.faq a{
+	margin:0;
+	padding: .5rem 1vw;
+	font-size: 12px;
+	text-align: left;
+	display: block;
+	text-decoration: none;
+	color: #f2f2f2;
+	background-color: #938fb1;
+}
+
+
+/*--COLUMNS--*/
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
+}
+.column {
+	padding: 0 $gutter;
+}
+
+@for $i from 0 through 12 {
+	$w: ($i/12) * 100%;
+	.small-#{$i} {
+		flex-basis: $w;
+	}
+} //end loop
+
+
+.jumbotron {
+	background-color: #383457;
+	color: white;
+	margin: .5rem .5%;
+	p {
+		font-size: 200%;
+		padding: 2rem $gutter;
+	}
+}
+/*------SOCIAL MEDIA------*/
+.social {
+	
+	text-align: center;
+	font-size: 3rem;
+	justify-content: center;
+	margin: .5rem;
+}
+.fab{
+	color: #f2f2f2;
+	padding: 1rem;
+}
+
+/*------IMAGES-------*/
+.column figure{
+	width: 100%;
+}
+.column figure img{
+	width: 100%;
+}
+
+/*------FOOTER------*/
+#footerWrapper {
+	clear: both;
+	background-color: lighten(#383457,10%);
+	color: #fff;
+	text-align: center;
+	padding: 1rem 2%;
+	position: relative;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

@@ -13,6 +13,7 @@ html {
 
 /* body rules */
 body {
+	font-family: $defaultFont;
 	margin: 0;
 	padding: 0;
 }
@@ -22,42 +23,86 @@ body {
 
 /*------NAVIGATION------*/
 #navWrapper{
-	background-color: darken($primaryColor, 30%);
-	display: flex;
-	justify-content:flex-end;
-	position:fixed;
-	color: #f2f2f2;
-	top:0;
-	left: 0;
-	width: 100%;
-	z-index: 10;
+	background-color: $primaryColor;
+	
 }
 nav ul {
 	margin: 0;
-	padding: 5vw;
+    padding:0;
+	z-index: 10;
+    display: flex;
+    justify-content: flex-end;
 }
 nav li {
+	font-family: 'Avenir Next', sans-serif;
 	list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
 }
 nav li.active {
 	background-color: darken($secondaryColor, 40%);
 }
 nav a {
 	display: block;
-	padding: .8rem 0; /*44px min*/
-	color: #eee;
+	padding: 1.5rem 0; /*44px min*/
+	color: #f2f2f2;
 	text-align: center;
 	text-decoration: none;
 }
 nav a:hover {
-	background-color: lighten($primaryColor, 30%);
+	background-color: lighten($primaryColor, 5%);
 }
 
+/*-----WELCOME SECTION------*/
+#main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	text-align: center;
+	height: 100vh;
+	
+	h1{
+		color: $primaryColor;
+		font-weight: $boldWeight;
+		font-size: 72px;
+		margin: 0;
+		padding: 0;
+	}
+	h2{
+		font-weight: $normalWeight;
+		font-size: 24px;
+	}
+}
+/*-----ABOUT-----*/
+#about{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-color: #230007 ;
+	color: #f2f2f2;
+	height: 100vh;
+	padding: 5%;
+	p{
+	font-size: 24px;
+	font-weight: $normalWeight
+	}
+}
+/*----MY WORK-----*/
+#myWork{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-gap: 1rem;
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+		margin-bottom: 6rem;
+}
 
 /*------FOOTER------*/
 #footerWrapper {
 	clear: both;
-	background-color: lighten($primaryColor,10%);
+	background-color: $primaryColor;
 	color: #fff;
 	text-align: center;
 	padding: 1rem 2%;

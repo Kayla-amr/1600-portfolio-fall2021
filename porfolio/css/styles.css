@@ -402,40 +402,87 @@ html {
 
 /* body rules */
 body {
+  font-family: "Avenir Next", sans-serif;
   margin: 0;
   padding: 0; }
 
 /*----MAIN----*/
 /*------NAVIGATION------*/
 #navWrapper {
-  background-color: #a70000;
-  clear: both; }
+  background-color: #740000; }
 
 nav ul {
   margin: 0;
-  padding: 5vw; }
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end; }
 
 nav li {
-  list-style-type: none; }
+  font-family: 'Avenir Next', sans-serif;
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 18px; }
 
 nav li.active {
-  background-color: #280000; }
+  background-color: black; }
 
 nav a {
   display: block;
-  padding: .8rem 0;
+  padding: 1.5rem 0;
   /*44px min*/
-  color: #eee;
+  color: #f2f2f2;
   text-align: center;
   text-decoration: none; }
 
 nav a:hover {
-  background-color: #ff0e0e; }
+  background-color: #8e0000; }
+
+/*-----WELCOME SECTION------*/
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 100vh; }
+  #main h1 {
+    color: #740000;
+    font-weight: 700;
+    font-size: 72px;
+    margin: 0;
+    padding: 0; }
+  #main h2 {
+    font-weight: 300;
+    font-size: 24px; }
+
+/*-----ABOUT-----*/
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #230007;
+  color: #f2f2f2;
+  height: 100vh;
+  padding: 5%; }
+  #about p {
+    font-size: 24px;
+    font-weight: 300; }
+
+/*----MY WORK-----*/
+#myWork {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem; }
 
 /*------FOOTER------*/
 #footerWrapper {
   clear: both;
-  background-color: #a70000;
+  background-color: #740000;
   color: #fff;
   text-align: center;
   padding: 1rem 2%;
@@ -449,57 +496,13 @@ nav a:hover {
 
 @media only screen and (min-width: 35rem) and (min-width: 560px) {
   nav li {
-    width: 25%;
-    float: left; }
-
-  main figure {
-    float: right;
-    width: 48%;
-    margin-left: 2%;
-    padding-bottom: .5rem; }
-
-  div.news {
-    clear: both;
-    column-count: 2;
-    column-rule: 1px solid #ddd; } }
+    width: 15%;
+    float: left; } }
 @media only screen and (min-width: 35rem) {
-  /* end of media query */
-  /*----------------------------MAIN---------------------------*/
-  main {
-    /*---COLUMNS---*/ }
-    main .medium-0 {
-      flex-basis: 0%; }
-    main .medium-1 {
-      flex-basis: 8.3333333333%; }
-    main .medium-2 {
-      flex-basis: 16.6666666667%; }
-    main .medium-3 {
-      flex-basis: 25%; }
-    main .medium-4 {
-      flex-basis: 33.3333333333%; }
-    main .medium-5 {
-      flex-basis: 41.6666666667%; }
-    main .medium-6 {
-      flex-basis: 50%; }
-    main .medium-7 {
-      flex-basis: 58.3333333333%; }
-    main .medium-8 {
-      flex-basis: 66.6666666667%; }
-    main .medium-9 {
-      flex-basis: 75%; }
-    main .medium-10 {
-      flex-basis: 83.3333333333%; }
-    main .medium-11 {
-      flex-basis: 91.6666666667%; }
-    main .medium-12 {
-      flex-basis: 100%; }
-    main .jumbotron p {
-      font-size: 300%; }
-    main .social {
-      font-size: 4rem; } }
+  /* end of media query */ }
 /* end of media query */
 @media only screen and (min-width: 60rem) and (min-width: 1028px) {
-  header, nav, main, footer, form .search-form {
+  header, nav, main, footer {
     max-width: 64rem;
     margin: auto; }
 
@@ -507,47 +510,7 @@ nav a:hover {
     padding-left: 2%; }
 
   nav li {
-    width: auto; }
-
-  nav a {
-    padding: .5rem 1rem; }
-
-  main figure {
-    width: 31%; }
-
-  div.news {
-    column-count: 3; } }
+    width: 10%; } }
 @media only screen and (min-width: 60rem) {
-  /* end of media query */
-  /*----------------------------MAIN---------------------------*/
-  main {
-    /*---COLUMNS---*/ }
-    main .large-0 {
-      flex-basis: 0%; }
-    main .large-1 {
-      flex-basis: 8.3333333333%; }
-    main .large-2 {
-      flex-basis: 16.6666666667%; }
-    main .large-3 {
-      flex-basis: 25%; }
-    main .large-4 {
-      flex-basis: 33.3333333333%; }
-    main .large-5 {
-      flex-basis: 41.6666666667%; }
-    main .large-6 {
-      flex-basis: 50%; }
-    main .large-7 {
-      flex-basis: 58.3333333333%; }
-    main .large-8 {
-      flex-basis: 66.6666666667%; }
-    main .large-9 {
-      flex-basis: 75%; }
-    main .large-10 {
-      flex-basis: 83.3333333333%; }
-    main .large-11 {
-      flex-basis: 91.6666666667%; }
-    main .large-12 {
-      flex-basis: 100%; }
-    main .jumbotron p {
-      font-size: 400%; } }
+  /* end of media query */ }
 /* end of media query */

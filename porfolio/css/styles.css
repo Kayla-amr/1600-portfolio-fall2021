@@ -471,13 +471,28 @@ nav a:hover {
 
 /*----MY WORK-----*/
 #myWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2; }
+  #myWork h3 {
+    color: #333;
+    font-size: 32px;
+    margin: 30px 2%; }
+
+/*----PROJECTS----*/
+.projects {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem; }
+  margin: 0;
+  font-weight: 700; }
+  .projects a {
+    text-decoration: none;
+    color: #35373a; }
 
 /*------FOOTER------*/
 #footerWrapper {

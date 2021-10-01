@@ -22,8 +22,14 @@ body {
 
 /*------NAVIGATION------*/
 #navWrapper{
-	background-color: lighten($primaryColor,10%);
-	clear: both;
+	display: flex;
+	justify-content:flex-end;
+	background-color: darken($primaryColor, 30%);
+	position:fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
 }
 nav ul {
 	margin: 0;
@@ -33,7 +39,7 @@ nav li {
 	list-style-type: none;
 }
 nav li.active {
-	background-color: darken($secondaryColor, 20%);
+	background-color: darken($secondaryColor, 30%);
 }
 nav a {
 	display: block;

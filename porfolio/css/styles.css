@@ -479,7 +479,7 @@ nav a:hover {
   #myWork h3 {
     color: #333;
     font-size: 32px;
-    margin: 30px 2%; }
+    margin: 30px 0 2%; }
 
 /*----PROJECTS----*/
 .projects {
@@ -489,16 +489,47 @@ nav a:hover {
   grid-gap: 1rem;
   width: 100%;
   margin: 0;
-  font-weight: 700; }
+  padding: 15px;
+  font-weight: 300; }
+  .projects .projectImage {
+    width: 100%; }
   .projects a {
+    color: #f2f2f2;
+    display: block;
     text-decoration: none;
-    color: #35373a; }
+    background-color: #740000; }
+
+/*--------CONTACT---------*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #230007;
+  color: #f2f2f2;
+  text-align: center;
+  height: 100vh; }
+  #contact h3 {
+    font-size: 32px;
+    margin: 30px 0 2%; }
+  #contact .fab {
+    font-size: 5rem;
+    margin: 10px;
+    padding: 0;
+    color: #f2f2f2; }
+  #contact a {
+    text-decoration: none; }
+  #contact .fab:hover {
+    color: #eee;
+    text-shadow: 1px 1px 10px #8e0000;
+    transform: translateY(8px);
+    transition: transform 0.3s ease-out; }
 
 /*------FOOTER------*/
 #footerWrapper {
   clear: both;
   background-color: #740000;
-  color: #fff;
+  color: #f2f2f2;
   text-align: center;
   padding: 1rem 2%;
   position: relative; }

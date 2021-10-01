@@ -20,24 +20,22 @@ body {
 
 /*----MAIN----*/
 
-
 /*------NAVIGATION------*/
-#navWrapper{
+#navWrapper {
 	background-color: $primaryColor;
-	
 }
 nav ul {
 	margin: 0;
-    padding:0;
+	padding: 0;
 	z-index: 10;
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 nav li {
 	font-family: 'Avenir Next', sans-serif;
 	list-style-type: none;
-    font-weight: 600;
-    font-size: 18px;
+	font-weight: 600;
+	font-size: 18px;
 }
 nav li.active {
 	background-color: darken($secondaryColor, 40%);
@@ -54,73 +52,112 @@ nav a:hover {
 }
 
 /*-----WELCOME SECTION------*/
-#main{
+#main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #f2f2f2;
 	text-align: center;
 	height: 100vh;
-	
-	h1{
+
+	h1 {
 		color: $primaryColor;
 		font-weight: $boldWeight;
 		font-size: 72px;
 		margin: 0;
 		padding: 0;
 	}
-	h2{
+	h2 {
 		font-weight: $normalWeight;
 		font-size: 24px;
 	}
 }
 /*-----ABOUT-----*/
-#about{
+#about {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-	background-color: #230007 ;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #230007;
 	color: #f2f2f2;
 	height: 100vh;
 	padding: 5%;
-	p{
-	font-size: 24px;
-	font-weight: $normalWeight
+	p {
+		font-size: 24px;
+		font-weight: $normalWeight;
 	}
 }
 /*----MY WORK-----*/
-#myWork{
+#myWork {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	background-color: #f2f2f2;
-	h3{
+	h3 {
 		color: #333;
 		font-size: 32px;
-		margin: 30px 2%;
+		margin: 30px 0 2%;
 	}
 }
 /*----PROJECTS----*/
-.projects{
-		text-align: center;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-		grid-gap: 1rem;
+.projects {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	width: 100%;
+	margin: 0;
+	padding: 15px;
+	font-weight: $normalWeight;
+	.projectImage {
 		width: 100%;
-		margin: 0;
-		font-weight:$boldWeight;
-		a{
-			text-decoration: none;
-			color: $fontColor;
-		}
+	}
+	a {
+		color: #f2f2f2;
+		display: block;
+		text-decoration: none;
+		background-color: $primaryColor;
+	}
+}
+/*--------CONTACT---------*/
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #230007;
+	color: #f2f2f2;
+	text-align: center;
+	height: 100vh;
+
+	h3{
+		font-size: 32px;
+		margin: 30px 0 2%;
+	}
+
+	.fab {
+		font-size: 5rem;
+		margin: 10px;
+		padding: 0;
+		color: #f2f2f2;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	.fab:hover {
+		color: #eee;
+		text-shadow: 1px 1px 10px lighten($primaryColor, 5%);
+		transform: translateY(8px);
+		transition: transform 0.3s ease-out;
+	}
 }
 
 /*------FOOTER------*/
 #footerWrapper {
 	clear: both;
 	background-color: $primaryColor;
-	color: #fff;
+	color: #f2f2f2;
 	text-align: center;
 	padding: 1rem 2%;
 	position: relative;

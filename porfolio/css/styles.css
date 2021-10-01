@@ -429,7 +429,7 @@ nav li.active {
 
 nav a {
   display: block;
-  padding: 1.5rem 0;
+  padding: 1.5rem .5rem;
   /*44px min*/
   color: #f2f2f2;
   text-align: center;

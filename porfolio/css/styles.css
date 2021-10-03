@@ -526,7 +526,7 @@ nav a:hover {
     text-decoration: none; }
   #contact .fab:hover {
     color: #eee;
-    text-shadow: 1px 1px 10px #8e0000;
+    text-shadow: 1px 1px 10px #da0000;
     transform: translateY(8px);
     transition: transform 0.3s ease-out; }
 

@@ -154,7 +154,7 @@ nav a:hover {
 	}
 	.fab:hover {
 		color: #eee;
-		text-shadow: 1px 1px 10px lighten($primaryColor, 5%);
+		text-shadow: 1px 1px 10px lighten($primaryColor, 20%);
 		transform: translateY(8px);
 		transition: transform 0.3s ease-out;
 	}

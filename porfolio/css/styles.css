@@ -448,11 +448,11 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-image: linear-gradient(145deg, #740000, #230007);
   text-align: center;
   height: 100vh; }
   #main h1 {
-    color: #740000;
+    color: #f2f2f2;
     font-weight: 700;
     font-size: 72px;
     margin: 0;

@@ -458,7 +458,7 @@ nav a:hover {
     margin: 0;
     padding: 0; }
   #main h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px; }
 
 /*-----ABOUT-----*/
@@ -472,7 +472,7 @@ nav a:hover {
   padding: 5%; }
   #about p {
     font-size: 24px;
-    font-weight: 300; }
+    font-weight: 400; }
 
 /*----MY WORK-----*/
 #myWork {
@@ -495,7 +495,7 @@ nav a:hover {
   width: 100%;
   margin: 0;
   padding: 15px;
-  font-weight: 300; }
+  font-weight: 400; }
   .projects .projectImage {
     width: 100%; }
   .projects a {

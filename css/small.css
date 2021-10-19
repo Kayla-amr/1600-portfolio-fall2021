@@ -79,17 +79,22 @@ main{
 }
 main h1{
  color: #9380e4;
- font-size: 2rem;
+ font-size: 32px;
 }
 main h2{
     color: #685b6b;
+    font-size: 24px;
+    font-style: italic;
+}
+main p{
+    font-size: 14px;
 }
 main img{
     width: 25%;
     float: right;
 }
 main ol{
-    font-size: 1.2rem;
+    font-size: 18px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
@@ -99,10 +104,6 @@ main ol li a{
 }
 main ol li a:hover{
     color: #9380e4;
-}
-main h2{
-    font-size: 1.1rem;
-    font-style: italic;
 }
 
 /*-----CONTACT SETTINGS----*/
@@ -146,7 +147,7 @@ footer {
     position: relative;
 }
 footer p{
-    font-size: .7rem;
+    font-size: 1rem;
     color: #f5f5f5;
 }
 

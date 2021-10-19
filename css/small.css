@@ -67,7 +67,12 @@ nav a {
 #home {
     clear: both;
     color: #333;
-    font-size: 1rem;
+    padding: 20px 0;
+  }
+  #home img{
+        width: 25%;
+        padding: 0 20px 0 20px;
+        float: right;
   }
 
 /*----MAIN----*/
@@ -87,12 +92,9 @@ main h2{
     font-style: italic;
 }
 main p{
-    font-size: 14px;
+    font-size: 1.2rem;
 }
-main img{
-    width: 25%;
-    float: right;
-}
+
 main ol{
     font-size: 18px;
     display: grid;

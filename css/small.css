@@ -7,7 +7,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
     text-decoration: none;
-    max-width: 75rem;
     margin: auto;
 }
 /*----BODY----*/
@@ -17,8 +16,10 @@ body{
 }
 
 /*----HEADER----*/
-header{
+#headerWrapper{
     background-color: #837396;
+}
+header{
     padding: 1rem 2%;
  }
 header h1{
@@ -32,10 +33,6 @@ header h2{
 }
 
 /*----NAVIGATION----*/
-nav {
-    background-color: #6b696b;
-    clear: both;
-}
 nav ul{
     padding: .5rem 2%;
 }
@@ -52,7 +49,7 @@ nav a {
     text-decoration: none;
 }
 
-nav {
+#navWrapper {
     background-color: #685b6b;
     clear: both;
 }
@@ -69,13 +66,17 @@ nav a {
 /*----SECTION----*/
 #home {
     clear: both;
-    font-size: 1rem;
     color: #333;
-    background-color:#e2e2e2;
-    padding: 1rem 2%;
+    font-size: 1rem;
   }
 
 /*----MAIN----*/
+main{
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 20px 2%;
+
+}
 main h1{
  color: #9380e4;
  font-size: 2rem;
@@ -88,8 +89,6 @@ main img{
     float: right;
 }
 main ol{
-    margin: 0;
-    padding: 0;
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,13 +106,9 @@ main h2{
 }
 
 /*-----CONTACT SETTINGS----*/
-    #contact{
-        background-color: #e2e2e2;
-    }
     h6{
         font-size: 2rem;
         color: #9380e4;
-        padding: 1rem 2%;
     }
   .contact-links {
     display: flex;
@@ -141,9 +136,11 @@ main h2{
   }
 
 /*-----FOOTER-----*/
+#footerWrapper{
+    background-color: #837396;
+}
 footer {
     clear: both;
-    background-color: #837396;
     text-align: center;
     padding: 1rem 2%;
     position: relative;

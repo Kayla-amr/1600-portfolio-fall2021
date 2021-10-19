@@ -466,7 +466,8 @@ main {
 .storyGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  padding-bottom: 20px; }
   .storyGrid span {
     display: block;
     text-align: center;

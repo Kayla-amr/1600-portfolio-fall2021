@@ -452,9 +452,13 @@ nav ul.hide {
 
 /*----MAIN----*/
 main {
+  background-color: #f2f2f2;
+  margin: 0;
   padding: 0 2%; }
   main h1 {
-    font-weight: 800;
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 600;
     font-size: 32px;
     color: #2d353fcc; }
 

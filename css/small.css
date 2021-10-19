@@ -96,6 +96,9 @@ main ol{
 main ol li a{
     color: #333;
 }
+main ol li a:hover{
+    color: #9380e4;
+}
 main h2{
     font-size: 1.1rem;
     font-style: italic;

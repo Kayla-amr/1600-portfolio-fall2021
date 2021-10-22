@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is designed to show how slide shows function properly">
+    <meta name="author" content="Kayla Macias">
+
+    <title>Boston City</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <h1>Boston City</h1>
+            <h2>Where History Comes Alive</h2>
+        </header>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()"> &#9776; </button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Visit</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pay Bills</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div id="mainWrapper">
+        <main class="clearfix">
+            
+            <!-- SLIDER -->
+            <div class="my_slider">
+                <picture>
+                    <source srcset="images/sliders/Boston_area_colonial_map-small.jpg" media="(max-width:28.12rem)">
+                    <source srcset="images/sliders/Boston_area_colonial_map.jpg" media="(min-width:28.12rem)">
+                    <img src="images/sliders/Boston_area_colonial_map.jpg" alt="">
+                    <div><b>Boston Area Colonial Map</b><br>
+                        During the Siege of Boston, a map depicting Boston and the
+                        surrounding area, including Bunker Hill, Dorchester Heights, and General Artemas Ward's force
+                        deployment. "Marshall's Life of Washington" is a book written by George Marshall (1806).</div>
+                </picture>
+
+                <picture>
+                    <source srcset="/images/sliders/bostonBombing-small.jpg" media="(max-width:28.12rem)">
+                    <source srcset="/images/sliders/bostonBombing.jpg" media="(min-width:28.12rem)">
+                    <img src="/images/sliders/bostonBombing.jpg" alt="">
+                    <div><b>Marathon Bombing</b><br>
+                        Bombing resulted in the deaths of three spectators. Despite these
+                        challenges, the city has emerged in the 21st century as a prosperous and cosmopolitan center
+                        of technology, education and medical research, with a population of about 4.7 million in the
+                        greater Boston area.
+
+                    </div>
+                </picture>
+
+                <picture>
+                    <source srcset="/images/sliders/Harvard_Old_College_small.jpg" media="(max-width:28.12rem)">
+                    <source srcset="/images/sliders/Harvard_Old_College.jpg" media="(min-width:28.12rem)">
+                    <img src="/images/sliders/Harvard_Old_College.jpg" alt="">
+                    <div><b>The 1638 building of Harvard College</b><br>
+                        Higher education became increasingly important,
+                        principally at Harvard (based across the river in Cambridge), but also at other institutions.
+                        The Massachusetts Institute of Technology (MIT) opened in the city in 1865. The first medical
+                        school for women, The Boston Female Medical School (which later merged with the Boston
+                        University
+                        School of Medicine), opened in Boston on November 1, 1848.</div>
+                </picture>
+
+                <picture>
+                    <source srcset="/images/sliders/molasses-flood-small.jpg" media="(max-width:28.12rem)">
+                    <source srcset="/images/sliders/molasses-flood.jpg" media="(min-width:28.12rem)">
+                    <img src="/images/sliders/molasses-flood.jpg" alt="">
+                    <div><b>Great Molasses Flood</b><br>
+                        One year later, 21 people died in the Great Molasses Flood, when a giant tank of the sweet
+                        sticky
+                        stuff exploded in Boston’s North End. In 1942, the Cocoanut Grove Fire killed 492 people, in one
+                        of the deadliest nightclub fires in world history.</div>
+                </picture>
+                <picture>
+                    <source srcset="/images/sliders/Pleasant_Street_Incline_junction_small.jpg"
+                        media="(max-width:28.12rem)">
+                    <source srcset="/images/sliders/Pleasant_Street_Incline_junction.jpg" media="(min-width:28.12rem)">
+                    <img src="/images/sliders/Pleasant_Street_Incline_junction.jpg" alt="">
+                    <div><b>Tremont Street Subway</b><br>
+                        Boston's Tremont Street Subway is the oldest subway tunnel in North America. As the population
+                        increased
+                        rapidly, Boston-area streetcar lines facilitated the creation of a profusion of streetcar
+                        suburbs.
+                        Middle-class businessmen, office workers and professionals lived in the suburbs and commuted
+                        into the city
+                        by subway.</div>
+                </picture>
+
+            </div>
+
+            <!-- CARDS -->
+            <h1>Plan Your Visit</h1>
+            <div class="flexed cards">
+                <div class="info">
+                    <a href=" # ">
+                        <i class="fas fa-bed"></i>
+                        <h3>PLACES TO STAY</h3>
+                    </a>
+                </div>
+
+                <div class="info">
+                    <a href=" # ">
+                        <i class="fas fa-shoe-prints"></i>
+                        <h3>WALK THE RED LINE</h3>
+                    </a>
+                </div>
+
+                <div class="info">
+                    <a href=" # ">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>PASS TO THE CITY</h3>
+                    </a>
+                </div>
+
+                <div class="info">
+                    <a href=" # ">
+                        <i class="fas fa-utensils"></i>
+                        <h3>FINE DINING</h3>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; 2021 &bull; Utah Valley University &bull; Built by Kayla Macias</p>
+        </footer>
+    </div>
+    <!------------ LINKS ---------------->
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- SLICK -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'Ease-out',
+                autoplay: true,
+                autoplaySpeed: 3000
+            })
+        });
+    </script>
+</body>
+
+</html>

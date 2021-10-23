@@ -115,6 +115,7 @@ nav {
         /*--PICTURE--*/
         picture {
             position: relative;
+            object-fit: cover;
         }
         picture div {
             background-color: rgba(0, 0, 0, 0.6);

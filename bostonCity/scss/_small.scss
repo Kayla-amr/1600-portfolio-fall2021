@@ -117,6 +117,10 @@ nav {
 		picture {
 			position: relative;
 			object-fit: cover;
+            
+            img{
+                width: 100%;
+            }
 		}
 
 		picture div {

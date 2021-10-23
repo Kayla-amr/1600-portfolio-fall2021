@@ -484,6 +484,8 @@ nav ul.hide {
     #mainWrapper main picture {
       position: relative;
       object-fit: cover; }
+      #mainWrapper main picture img {
+        width: 100%; }
     #mainWrapper main picture div {
       background-color: rgba(0, 0, 0, 0.6);
       color: #f2f2f2;

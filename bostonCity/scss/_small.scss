@@ -1,239 +1,238 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*----BODY----*/
 body {
-    font-family: "Avenir Next", sans-serif;
+	font-family: "Avenir Next", sans-serif;
 }
 
 /*---HEADER----*/
 #headerWrapper {
-    position: relative;
-    height: 100;
-    width: 100%;
-    background-image: url("../images/header.jpg");
-    background-size: cover;
-    margin: 0;
-    padding: 0 2%;
-    
+	position: relative;
+	height: 100;
+	width: 100%;
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0 2%;
 
-    h1 {
-        margin: 0;
-        padding-top: 50px;
-        font-size: 3rem;
-        color: #f2f2f2f2;
-        font-weight: 800;
-    }
-    h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #f2f2f2;
-    }
+	h1 {
+		margin: 0;
+		padding-top: 50px;
+		font-size: 3rem;
+		color: #f2f2f2f2;
+		font-weight: 800;
+	}
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: #f2f2f2;
+	}
 }
 
 .headerWrapper::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.25);
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.25);
 }
 
 /*----NAVIGATION----*/
 
 nav button {
-    margin: 0.2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #f2f2f2;
+	margin: 0.2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #f2f2f2;
 }
 #navWrapper {
-    background-color: #5377a0cc;
+	background-color: #5377a0cc;
 }
 nav {
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
 
-    ul li a {
-        display: block;
-        padding: 0.8rem 2%;
-        text-decoration: none;
-        color: rgba(242, 242, 242, 0.8);
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
-    }
+	ul li a {
+		display: block;
+		padding: 0.8rem 2%;
+		text-decoration: none;
+		color: rgba(242, 242, 242, 0.8);
+		border-top: 1px solid rgba(0, 0, 0, 0.3);
+	}
 
-    ul li.active a {
-        background-color: rgba(0, 0, 0, 0.2);
-        color: #fff;
-    }
-    ul li a:hover {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+	ul li.active a {
+		background-color: rgba(0, 0, 0, 0.2);
+		color: #fff;
+	}
+	ul li a:hover {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
 
-    ul.hide {
-        display: none;
-    }
+	ul.hide {
+		display: none;
+	}
 }
 
 /*----------------MAIN----------------*/
 #mainWrapper {
-    background-color: #5377a0a8;
-    main {
-        background-color: #f2f2f2;
-        padding: 0;
+	background-color: #5377a0a8;
+	main {
+		background-color: #f2f2f2;
+		padding: 0;
 
-        h1 {
-            margin: 0;
-            padding: 20px 2%;
-            color: $primaryColor;
-            font-size: 1.8rem;
-        }
+		h1 {
+			margin: 0;
+			padding: 20px 2%;
+			color: $primaryColor;
+			font-size: 1.8rem;
+		}
 
-        h2 {
-            margin: 0;
-            padding: 0 2%;
-        }
+		h2 {
+			margin: 0;
+			padding: 0 2%;
+		}
 
-        /*-------DIVS----------*/
+		/*-------DIVS----------*/
 
-        /*--PICTURE--*/
-        picture {
-            position: relative;
-            object-fit: cover;
-        }
+		/*--PICTURE--*/
+		picture {
+			position: relative;
+			object-fit: cover;
+		}
 
-        picture div {
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #f2f2f2;
-            position: absolute;
-            bottom: 0;
-            margin: 0;
-            padding: 10px;
-        }
-
-        
-    }
+		picture div {
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #f2f2f2;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			padding: 10px;
+		}
+	}
 }
 /*--CARDS--*/
 .cards {
-    text-align: center;
-    justify-content: center;
-    padding: 1vw;
-    flex-basis: 100%;
-/*-----HOVER IMAGE----*/
-    div:nth-child(1) {
-        background-image: url(../images/cards/bostonHotel.jpg);
+	text-align: center;
+	justify-content: center;
+	padding: 1vw;
+	flex-basis: 100%;
+	/*-----HOVER IMAGE----*/
+	div:nth-child(1) {
+		background-image: url(../images/cards/bostonHotel.jpg);
+	}
 
-    }
+	div:nth-child(2) {
+		background-image: url(../images/cards/freedomTrail.jpg);
+	}
 
-    div:nth-child(2) {
-        background-image: url(../images/cards/freedomTrail.jpg);
-    }
+	div:nth-child(3) {
+		background-image: url(../images/cards/bostonCity.jpg);
+	}
 
-    div:nth-child(3) {
-        background-image: url(../images/cards/bostonCity.jpg);
-    }
+	div:nth-child(4) {
+		background-image: url(../images/cards/bostonDining.jpg);
+	}
 
-    div:nth-child(4) {
-        background-image: url(../images/cards/bostonDining.jpg);
-    }
+	/*-----BACKGROUND COLOR-----*/
+	div:nth-child(1) a {
+		background-color: #5377a0;
+	}
 
-/*-----BACKGROUND COLOR-----*/
-    div:nth-child(1) a {
-        background-color: #5377a0;
-    }
+	div:nth-child(2) a {
+		background-color: #617fa0;
+	}
 
-    div:nth-child(2) a {
-        background-color: #617fa0;
-    }
+	div:nth-child(3) a {
+		background-color: #798ca0;
+	}
 
-    div:nth-child(3) a {
-        background-color: #798ca0;
-    }
+	div:nth-child(4) a {
+		background-color: #8893a0;
+	}
 
-    div:nth-child(4) a {
-        background-color: #8893a0;
-    }
+	a {
+		display: block;
+		width: 100%;
+		height: 300px;
+		padding: 0 2%;
+		text-decoration: none;
+		transition: all 0.5s ease-in;
+	}
 
-    a {
-        display: block;
-        width: 100%;
-        height: 300px;
-        padding: 0 2%;
-        text-decoration: none;
-        transition: all 0.5s ease-in;
-    }
-
-    
-
-    div a:hover {
-        background: none;
-        text-shadow: 0 0 5px black;
-    }
-    a img {
-        padding: 4rem 0 0 0;
-        
-    }
-    a h3 {
-        font-size: 1.2rem;
-        padding: 1rem 0;
-        white-space: nowrap;
-        color: white;
-    }
-    .info{
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
+	div a:hover {
+		background: none;
+		text-shadow: 0 0 5px black;
+	}
+	a img {
+		padding: 4rem 0 0 0;
+	}
+	a h3 {
+		font-size: 1.2rem;
+		padding: 1rem 0;
+		white-space: nowrap;
+		color: white;
+	}
+	
+}
+.info {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 /*-----ICONS-----*/
-.fas{
-    font-size: 40px;
-    color: #f2f2f2f2;
-    padding-top: 40px;
+.fas {
+	font-size: 40px;
+	color: #f2f2f2f2;
+	padding-top: 40px;
 }
 
 /*-------FOOTER----------*/
 #footerWrapper {
-    background-color: #5377a0;
-    padding: 10px 0;
-    color: #f2f2f2;
-    text-align: center;
-    footer {
-        p {
-            margin: 0;
-            padding: 0;
-        }
-    }
+	background-color: #5377a0;
+	padding: 10px 0;
+	color: #f2f2f2;
+	text-align: center;
+	footer {
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
 }
 
-.flexed{
-    display: flex;
-    flex-wrap: wrap;
+/*-----FIXED ISSUES-----*/
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column{
+    padding: 0 0.5vw;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }

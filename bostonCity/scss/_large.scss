@@ -46,6 +46,11 @@
             padding: .6rem 1rem;
 }
 
+picture {
+    position: relative;
+    object-fit: cover;
+}
+
 .info{
     flex-basis: 25%;
     padding: .5rem 1%

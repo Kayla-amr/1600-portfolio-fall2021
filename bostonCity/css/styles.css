@@ -484,9 +484,10 @@ nav ul.hide {
       padding: 0 2%; }
     #mainWrapper main picture {
       position: relative;
-      object-fit: cover; }
+      object-fit: contain; }
       #mainWrapper main picture img {
-        width: 100%; }
+        width: 100%;
+        height: 400px; }
     #mainWrapper main picture div {
       background-color: rgba(0, 0, 0, 0.6);
       color: #f2f2f2;
@@ -826,6 +827,10 @@ nav ul.hide {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .6rem 1rem; }
+
+  picture {
+    position: relative;
+    object-fit: cover; }
 
   .info {
     flex-basis: 25%;

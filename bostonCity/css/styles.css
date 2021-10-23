@@ -470,17 +470,17 @@ nav ul.hide {
   background-color: #5377a0a8; }
   #mainWrapper main {
     background-color: #f2f2f2;
-    padding: 0 2%;
+    padding: 0;
     /*-------DIVS----------*/
     /*--PICTURE--*/ }
     #mainWrapper main h1 {
       margin: 0;
-      padding: 20px 0;
+      padding: 20px 2%;
       color: #123d6d;
       font-size: 1.8rem; }
     #mainWrapper main h2 {
       margin: 0;
-      padding: 0; }
+      padding: 0 2%; }
     #mainWrapper main picture {
       position: relative;
       object-fit: cover; }

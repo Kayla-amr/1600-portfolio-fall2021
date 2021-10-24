@@ -1,0 +1,124 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+
+/* HEADER  */
+#headerWrapper{
+  background-color: $primaryColor;
+}
+
+header {
+    color: #f2f2f2;
+    position: relative;
+    font-size: 42px;
+    padding: 20px;
+    margin: 0;
+} // end header
+
+
+/* NAV */
+nav{
+  background-color: lighten($color: #000000, $amount: 0);
+}
+
+/* MAIN */
+main{
+  margin: 0;
+  padding: 0 2%;
+  background-color: #f2f2f2;
+
+  h1{
+    color: darken($primaryColor, 20%);
+    font-size: 1.8rem;
+    padding-top: 20px;
+  }
+}
+
+/*----------- FORM --------------*/
+form fieldset{
+  margin: 2rem 0;
+  border: 1px solid #9AB87A;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend{
+  color: darken($primaryColor, 10%);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: #333;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .74rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background: rgba(0,0,0,0.1);
+}
+
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: darken($primaryColor, 10%);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required{
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+
+
+/* FOOTER  */
+#footerWrapper{
+  background-color: $primaryColor;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 10px;
+  
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

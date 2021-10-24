@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="How to ccreate forms for users and make it appealing">
+    <meta name="author" content="Kayla Macias">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Kayla Macias</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <!-- BUTTON -->
+        <button id="hamburgerBtn">
+            <span><i>&equiv;</i>OPEN</span>
+            <span><i>&otimes;</i>CLOSE</span>
+        </button>
+
+        <ul id="primaryNav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li class="parent active"><a href="#">Order</a>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Customer Reviews</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Course Proposal Application</h1>
+
+        <!-- FORM -->
+        <form method="get" action="thanks.html">
+
+            <!-- CUSTOMER INFORMATION -->
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top"> Full Name*<input type="text" name="fname" required></label>
+                <label class="top"> Phone<input type="tel" name="phone" placeholder="8015557890" required></label>
+                <label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                
+            </fieldset>
+            <!-- SWAG INFORMATION -->
+            <fieldset>
+                <legend>Swag Information</legend>
+                <label class="top"> Date Needed <input type="date" name="completeDate"></label>
+                <label class="top"> Business Name <input type="text" name="fname" ></label>
+                <label class="top"> Business URL<input type="url" name="url" placeholder="http://"></label>
+
+                <label class="top"> Color
+                    <select name="color">
+                        <option value="">Please Select &#9662</option>
+                        <option value="black"> Black </option>
+                        <option value="blue"> Blue </option>
+                        <option value="gree"> Green </option>
+                        <option value="grey"> Grey </option>
+                        <option value="pink"> Pink </option>
+                        <option value="purple"> Purple </option>
+                        <option value="red"> Red </option>
+                        <option value="yellow"> Yellow </option>
+                        <option value="teal"> Teal </option>
+                    </select>
+                </label>
+
+                <label class="top"> Quantity <input type="number" name="quantity"></label>
+
+                <div>Material</div>
+                <label class="sbs"><input type="radio" name="audience" value="cotton"> Cotton </label>
+                <label class="sbs"><input type="radio" name="audience" value="satin"> Satin </label>
+                
+              
+
+            </fieldset>
+            <!-- PAYMENT INFORMATION -->
+            <fieldset>
+
+                <label class="top"> Name on Card*<input type="text" name="fname" required></label>
+                <label class="top"> Card Number<input type="tel" name="card number" placeholder="1234567890" required></label>
+                <label class="top"> Expiration Date<input type="tel" name="expiration date" placeholder="0321" required></label>
+            </fieldset>
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Order My Swag" class="submitBtn">
+
+        </form>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; 2018 &bull; Kayla Macias
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

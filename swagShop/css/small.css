@@ -21,6 +21,34 @@ header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
+
+/*---- HAMBURGER BUTTON ----*/
+#hamburgerBtn span:nth-child{
+    display: block;
+}
+
+#hamburgerBtn:nth-child(2){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+/* - PRIMARY NAV - */
+#primaryNav{
+    height: 0;
+    overflow: hidden;
+}
+
+#primaryNav.open{
+    height: auto;
+}
+
+
 nav {
     background-color: #666;
 }

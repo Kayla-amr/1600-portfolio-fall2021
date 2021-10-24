@@ -7,7 +7,7 @@ header, nav, main, footer {
 /* NAVigation  */
 
 nav {
-	background-color:$menuColor;
+	background-color: lighten($menuColor, 20%);
 
 	// new stuff
 	ul {

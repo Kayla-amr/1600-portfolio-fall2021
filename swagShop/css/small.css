@@ -48,6 +48,20 @@ header h2 {margin: 0; font-weight: normal;}
     height: auto;
 }
 
+#primaryNav li.parent > a::after{
+    content: "\25BC";
+    font-size: .75rem;
+    color: rgba(0,0,0,0.1);
+    float: right;
+}
+
+#primaryNav li ul{
+    display: none;
+}
+
+#primaryNav li:hover ul{
+    display: block;
+}
 
 nav {
     background-color: #666;

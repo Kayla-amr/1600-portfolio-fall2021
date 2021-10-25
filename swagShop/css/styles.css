@@ -133,6 +133,8 @@ main {
     color: #425345;
     font-size: 1.8rem;
     padding-top: 20px; }
+  main p {
+    padding: 2vh; }
 
 /*----------- FORM --------------*/
 form fieldset {

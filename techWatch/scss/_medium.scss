@@ -1,0 +1,29 @@
+div#pageWrapper {
+    grid-template-areas:
+        "header header"
+        "navigation content"
+        "footer footer";
+
+    grid-template-columns: 150px auto;
+}
+
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+
+/*----------- NAVIGATION --------------*/
+a.myjump {
+    display: none;
+}
+nav {
+    height: auto;
+}
+
+/*----------- MAIN --------------*/
+main {
+    img {
+        width: 35%;
+        height: 100%;
+    }
+}
+/*----------- FOOTER --------------*/

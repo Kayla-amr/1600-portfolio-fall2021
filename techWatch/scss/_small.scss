@@ -1,0 +1,152 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div#pageWrapper {
+    display: grid;
+    grid-template-areas:
+        "hamburger"
+        "header"
+        "content"
+        "footer"
+        "navigation";
+}
+
+/*----------- BODY --------------*/
+body {
+    font-family: "Avenir Next", sans-serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+    grid-area: header;
+    padding: 0.5rem 2%;
+    font-weight: 800px;
+    background-color: #002f3d;
+    color: #f2f2f2;
+    h1 {
+        margin: 0;
+    }
+}
+
+/*----------- NAVIGATION --------------*/
+a.myjump {
+    display: block;
+    width: 60px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.7rem;
+    padding: 0.4rem;
+    text-decoration: none;
+    padding-left: 2%;
+}
+
+nav {
+    grid-area: navigation;
+    background-color: lighten($color: #002f3d, $amount: 20);
+    font-weight: 500px;
+    height: 100vh;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    flex-basis: 100%;
+}
+nav ul li a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+}
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/*----------- HAMBURGER --------------*/
+div#hamburger {
+    grid-area: hamburger;
+    background-color: #002f3d;
+}
+
+/*----------- MAIN --------------*/
+main {
+    grid-area: content;
+    padding: 0 2%;
+    min-height: 10rem;
+    background-color: #f2f2f2;
+    h1 {
+        margin: 0;
+        padding: 2rem 0;
+    }
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 700px;
+    }
+    p {
+        margin: 0;
+        padding: 0.5rem 0;
+        font-weight: 500px;
+        line-height: 2rem;
+        overflow: hidden;
+    }
+    
+    img {
+        width: 100%;
+        padding: 0;
+        flex-shrink: 0;
+    }
+}
+
+.devices {
+    margin: 0%;
+    padding: 1rem;
+
+    .flip{
+        float: left;
+    }
+
+    .noflip{
+        float:right;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    grid-area: footer;
+    background-color: #002f3d;
+    color: #f2f2f2;
+    padding: 0.5rem 2%;
+    text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -65,13 +65,14 @@ nav ul li:first-child a {
 	border-left: none;
 }
 
-nav ul li a:hover {
-	background-color: #eee;
-	color: #333;
-}
 nav ul li.active a {
 	background-color: #8c2f39;
 	color: #fff;
+}
+
+nav ul li a:hover {
+	background-color: lighten($color: #8c2f39, $amount: 50);
+	color: #333;
 }
 /*----------- MAIN --------------*/
 main {
@@ -98,17 +99,19 @@ main {
 		figcaption {
 			position: absolute;
 			bottom: 2px;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(255, 255, 255, 0.505);
 			width: 100%;
 			padding: .5rem 2vw;
-			color: white;
+			color: #333;
+			font-weight: 800;
 		}
 	}
 }
 
 section{
 	margin: .5rem;
-	background-color: #b23a48;
+	background-color: darken($color: #8c2f39, $amount: 10);
+	color: #f2f2f2;
 	
 }
 

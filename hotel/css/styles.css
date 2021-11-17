@@ -356,7 +356,8 @@ nav ul li a {
   color: #eee;
   border-left: 1px solid #777;
   font-size: .8rem;
-  width: 100%; }
+  width: 100%;
+  padding: 5px; }
 
 nav ion-icon {
   font-size: 2rem; }
@@ -381,20 +382,22 @@ main {
     color: #8c2f39; }
 
 /*-------- FIGURE --------*/
-#myCards figure {
-  margin: 0;
-  width: 100%;
-  position: relative; }
-  #myCards figure img {
-    width: 100%; }
-  #myCards figure figcaption {
-    position: absolute;
-    bottom: 2px;
-    background-color: rgba(255, 255, 255, 0.505);
+#myCards {
+  padding-bottom: 60px; }
+  #myCards figure {
+    margin: 0;
     width: 100%;
-    padding: .5rem 2vw;
-    color: #333;
-    font-weight: 800; }
+    position: relative; }
+    #myCards figure img {
+      width: 100%; }
+    #myCards figure figcaption {
+      position: absolute;
+      bottom: 2px;
+      background-color: rgba(255, 255, 255, 0.505);
+      width: 100%;
+      padding: .5rem 2vw;
+      color: #333;
+      font-weight: 800; }
 
 section {
   margin: .5rem;
@@ -450,7 +453,8 @@ p {
   /*----------- MAIN --------------*/
   main #myCards {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 60px; }
 
   p {
     font-size: 14px; }

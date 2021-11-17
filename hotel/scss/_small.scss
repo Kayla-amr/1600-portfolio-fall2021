@@ -18,21 +18,18 @@ body {
 }
 
 /*----------- HEADER --------------*/
-header {
+.headerWrapper {
 	padding: .5rem 2%;
-	background-color: #ddd;
+	background-color: #461220;
 }
 header h1 {
 	margin: 0;
-}
-header h2 {
-	margin: 0;
-	font-weight: normal;
+	color: #f2f2f2;
+	text-align: center;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-	background-color: rgb(155, 107, 5);
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -48,16 +45,21 @@ nav ul li {
 	flex-basis: 33.3%;
 }
 nav ul li a {
-	display: block;
-	width: 100%;
-	background-color: #444;
-	color: #eee;
-	border-left: 1px solid #777;
-	padding: .5rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: .9rem;
-	text-align: center;
+	background-color: #461220;
+	color: #eee;
+	border-left: 1px solid #777;
+	font-size: .8rem;
+	width: 100%;
+}
+
+nav ion-icon{
+	font-size: 2rem;;
 }
 nav ul li:first-child a {
 	border-left: none;
@@ -68,18 +70,24 @@ nav ul li a:hover {
 	color: #333;
 }
 nav ul li.active a {
-	background-color: #000;
+	background-color: #8c2f39;
 	color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-	padding: 0 2%;
+	margin: 0;
+	padding: 0;
 	min-height: 10rem;
+
+	h1{
+		color: #8c2f39;
+	}
 }
 
 
 /*-------- FIGURE --------*/
 #myCards {
+		
 	figure {
 		margin: 0;
 		width: 100%;
@@ -89,7 +97,7 @@ main {
 		}
 		figcaption {
 			position: absolute;
-			bottom: 0;
+			bottom: 2px;
 			background-color: rgba(0, 0, 0, 0.4);
 			width: 100%;
 			padding: .5rem 2vw;
@@ -97,31 +105,41 @@ main {
 		}
 	}
 }
-div {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+
+section{
+	margin: .5rem;
+	background-color: #b23a48;
+	
 }
 
-div bottom span i {
-	float: left;
-	font-size: 1.5rem;
-}
-
-div below span p {
-	padding-left: 1.6rem;
-}
-
-#infoWrapper {
+#myCards {
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
-/*----------- FOOTER --------------*/
-footer {
-	background-color: #ddd;
-	padding: .5rem 2%;
-	text-align: center;
+div section span{
+	display: block;
+	justify-self: center;
+	padding: 10px 0 10px .2rem;
+	block-size: 70px;
 }
+ div ion-icon{
+	float: left;
+	font-size: 1.5rem;
+}
+
+ p{
+	margin: 0;
+	padding-left: 1.6rem;
+	font-size: 12px;
+}
+
+.infoWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*----------- FOOTER --------------*/
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

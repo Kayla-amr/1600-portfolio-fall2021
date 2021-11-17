@@ -1,25 +1,38 @@
-
-
-
 /*----------- BODY --------------*/
-
-
 
 /*----------- HEADER --------------*/
 
-
-
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
-
+nav ul li {
+	width: auto;
+}
+nav ul li:first-child a {
+	border-left: 1px solid #777;
+}
+nav ul li:last-child a {
+	border-right: 1px solid #777;
+}
+nav ul li a {
+	padding: .5rem;
+}
 
 /*----------- MAIN --------------*/
+main {
+	#myCards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+section {
+	margin: .5rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	background-color: #66a871;
+}
 
-
+p{
+	font-size: 14px;
+}
 
 /*----------- FOOTER --------------*/
-    

@@ -390,18 +390,10 @@ main {
   clear: both; }
 
 @media only screen and (min-width: 35rem) {
-  /* 35em is also 560px (if basefont is 16px) */ }
-@media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  section #weatherforecast {
+  section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr; } }
-@media only screen and (min-width: 35rem) {
-  /* end of media query */ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  /* 64em is also 1028px (if basefont is 16px) */ }
-@media only screen and (min-width: 64rem) and (min-width: 64rem) {
-  section #weatherforecast {
+  section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
-@media only screen and (min-width: 64rem) {
-  /* end of media query */ }
 /* end of media query */

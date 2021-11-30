@@ -23,7 +23,7 @@ fetch(apiURL).then((response) => response.json()).then((myList) => {
 
 		//information elements
 		let theIconLeftTag = document.createElement('ion-icon');
-    theIconLeftTag.slot = 'icon-only';
+    	theIconLeftTag.slot = 'icon-only';
 		theIconLeftTag.name = 'car-sport-outline';
 
 		let theAddress1Tag = document.createElement('p');
@@ -33,7 +33,7 @@ fetch(apiURL).then((response) => response.json()).then((myList) => {
 		theAddress2Tag.textContent = myList[i].address[1];
 
 		let theIconRightTag = document.createElement('ion-icon');
-    theIconRightTag.slot = 'icon-only';
+    	theIconRightTag.slot = 'icon-only';
 		theIconRightTag.name = 'call-outline';
 
 		let thePhoneTag = document.createElement('p');

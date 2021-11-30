@@ -5,65 +5,52 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /*----------- BODY --------------*/
-body {
-    font-size: 16px;
-    font-family: 'Avenir Next', sans-serif;
-}
-
-
-/*----------- HEADER --------------*/
 #headerWrapper{
   background-color: #f2f2f2;
-
-  h1{
-      padding: 20px;
-      margin: 0;
-      font-size: 42px;
-      text-align: center;
-      color: #5377a0cc;
+}
+h1{
+  padding: 20px;
+  margin: 0;
+  font-size: 42px;
+  text-align: center;
+  color: #5377a0cc;
+}
+  
+  body {
+      font-size: 16px;
+      font-family: 'Avenir Next', sans-serif;
   }
   
-}
-/*----------- MAIN --------------*/
+  /*----------- MAIN --------------*/
 main{
   background-color: #f2f2f2;
   margin: 0;
   padding: 0 2%;
   text-align: center;
+}
 
-  h1{
-    padding: 10px;
-    margin: 0;
-    font-size: 2em;
+h2{
+  padding-bottom: 20px;
+  margin: 0;
+ font-size: 1em;
+ font-weight: 500;
   }
-  h2{
-    padding-bottom: 20px;
-    margin: 0;
-   font-size: 1em;
-   font-weight: 500;
-  }
-
-    section #weatherforecast{
-      display: grid;
+  
+  
+  section#weatherforecast{
+      display:grid;
       grid-template-columns: 1fr;
-      justify-content: center;
-    }
-
-    section#weatherforecast div{
+  }
+  
+  .weatherDay{
+      margin: 1rem;
+      padding: 0;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #fff;
       border: thick solid #5377a0cc;
-      background-color: #ffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      margin: 10px;
-      padding: 0px;
-    }
 
-    #weatherforecast{
-      padding: 10px;
       span{
-        
         background-color: #5377a0cc;
         display: block;
         color: #f2f2f2;
@@ -73,18 +60,23 @@ main{
         font-size: 18px;
         font-weight: 600;
       }
+
       p{
         padding: 0;
         margin: 20px 0 0 0;
         font-size: 16px;
       }
       img{
-        filter: drop-shadow(0 0 0.75rem #323132);
+        filter: drop-shadow(0 0 0.5rem #323132);
       }
-      
-    }
+  
+  }
 
-}
+
+
+
+
+
 
 /*----------- FOOTER --------------*/
 #footerWrapper {
@@ -92,7 +84,7 @@ main{
   background-color: #5377a0cc;
   color: #fff;
   text-align: center;
-  padding: 1rem 5%;
+  padding: .2rem 5%;
   position: relative;
 }
 

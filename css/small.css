@@ -58,7 +58,7 @@ nav li {list-style-type: none;}
 nav li.active {background-color: #9380e4}
 nav a {
     display: block;
-    padding: .8rem 10px; /*44px min*/
+    padding: .8rem 10p; /*44px min*/
     color: #eee;
     text-align: center;
     text-decoration: none;

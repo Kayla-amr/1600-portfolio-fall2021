@@ -1,0 +1,267 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----BODY----*/
+body {
+    font-family: "Mulish", sans-serif;
+    background-color: #f2f2f2;
+}
+
+/*---HEADER----*/
+
+header {
+    padding: 10px 2%;
+    img {
+        float: left;
+        padding-right: 5px;
+    }
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 42px;
+        color: #0480b1;
+    }
+    h2 {
+        padding: 0;
+        margin: 0;
+        line-height: 0.5;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.55rem;
+        color: #a8a8b2;
+    }
+}
+/*----NAVIGATION----*/
+nav button {
+    margin: 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+}
+nav {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+    nav button {
+        margin: 0.2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 1.6rem;
+        margin: 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #a8a8b2;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: row;
+    }
+    ul li.active a {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    ul.hide {
+        display: none;
+    }
+    ion-icon.md.hydrated {
+        padding-right: 0.5rem;
+    }
+}
+
+/*----MAIN----*/
+main {
+    margin: 0;
+    padding: 0;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
+main figure.hero img {
+    width: 100%;
+}
+/*----DIVS----*/
+#primary {
+    margin: 0;
+    padding: 0;
+    color: #a8a8b2;
+
+    h2,
+    h4 {
+        color: #0480b1;
+    }
+}
+#highlights {
+    background-color: #000;
+    margin: 20px 0;
+    padding: 0 2%;
+    color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    div {
+        margin: 10px;
+        padding: 0;
+    }
+    h3 {
+        margin: 0;
+        padding: 10px 0;
+        color: #fdd831;
+    }
+
+    h2 {
+        color: #fdd831;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    div:nth-child(2) {
+        text-align: end;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+main #primary h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#workInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+    h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+}
+
+#workProjects {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+    color: #a8a8b2;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    
+    
+    div {
+        margin: 10px;
+    }
+    h4 {
+        margin: 0;
+        padding: 0;
+        color: #0480b1;
+        font-size: 20px;
+    }
+
+    .graph {
+        z-index: -1;
+        width: 100%;
+        position: relative;
+    }
+
+    figure {
+        float: right;
+        margin: 0;
+    }
+
+    figcaption {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-top: -4.4em;
+        width: 100%;
+        z-index: 1;
+        padding: 1rem;
+        float: right;
+        text-align: center;
+
+        button {
+            padding: 0.5rem 3rem;
+            margin: 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: #0480b1;
+            color: #fff;
+        }
+    }
+}
+
+#clients {
+    background-color: #fff;
+    padding: 20px 2%;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        padding: 10px;
+    }
+}
+
+/*----FOOTER----*/
+#footerWrapper {
+    clear: both;
+    color: #fff;
+    text-align: left;
+    position: relative;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0480b1+0,014065+100 */
+background: #0480b1; /* Old browsers */
+background: -moz-linear-gradient(top,  #0480b1 0%, #014065 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0480b1 0%,#014065 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0480b1 0%,#014065 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0480b1', endColorstr='#014065',GradientType=0 ); /* IE6-9 */
+
+
+    footer {
+        padding: 10px 2%;
+    }
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

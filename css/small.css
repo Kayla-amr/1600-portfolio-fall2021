@@ -58,7 +58,7 @@ nav li {list-style-type: none;}
 nav li.active {background-color: #9380e4}
 nav a {
     display: block;
-    padding: .8rem 0; /*44px min*/
+    padding: .8rem 10px; /*44px min*/
     color: #eee;
     text-align: center;
     text-decoration: none;
@@ -98,7 +98,7 @@ main p{
 main ol{
     font-size: 18px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     list-style-type: none;
 }
 main ol li a{

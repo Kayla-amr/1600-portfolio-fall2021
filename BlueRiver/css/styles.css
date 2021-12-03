@@ -433,7 +433,10 @@ main #primary h2 {
   display: grid;
   grid-template-columns: 1fr; }
   #workInfo div {
-    margin: 10px; }
+    margin: 10px;
+    display: block; }
+    #workInfo div img {
+      width: 100%; }
   #workInfo h2 {
     font-size: 42px; }
   #workInfo h4 {
@@ -449,6 +452,8 @@ main #primary h2 {
   border-top: 1px solid rgba(0, 0, 0, 0.3); }
   #workProjects div {
     margin: 10px; }
+    #workProjects div img {
+      width: 100%; }
   #workProjects h4 {
     margin: 0;
     padding: 0;
@@ -483,7 +488,7 @@ main #primary h2 {
   #clients div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
   #clients img {
     padding: 10px; }

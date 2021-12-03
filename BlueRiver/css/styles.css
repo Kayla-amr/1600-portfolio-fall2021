@@ -427,7 +427,8 @@ main figure.hero img {
       margin: 0; }
 
 main #primary h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0 2%; }
 
 #workInfo {
   display: grid;

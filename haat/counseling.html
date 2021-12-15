@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kayla Macias">
+
+    <title>Esteban Torres High School - HAAT</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo.png" alt="logo" srcset="images/logos/logo1.png 1x, images/logos/logo2.png 2x, images/logos/logo3.png 3x">
+            </figure>
+            <h1>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h1>
+            <h2>ON THE ESTEBAN E. TORRES CAMPUS</h2>
+        </header>
+    </div>
+
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Events</a></li>
+                <li><a href="index.html">Students</a></li>
+                <li class="active"><a href="#">Counseling</a></li>
+                <li><a href="#">Faculty & Staff</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- MAIN -->
+    <main class="clearfix">
+        <div class="counselorinfo">
+            <h2>HAAT Student Center</h2>
+            <p>Office Hours: Monday thru Friday 7:00am - 3:00pm</p>
+            <p>For questions and concerns, Counselors and Staff may also be reached via email.</p>
+        </div>
+
+        <!-- FORM -->
+		<form method="get" action="thanks.html">
+
+			<!-- Counselor Meeting -->
+			<fieldset>
+				<legend>Student Information</legend>
+				<label class="top"> Full Name*<input type="text" name="fname" required></label>
+                <label class="top"> Grade
+					<select name="color">
+						<option value="">Please Select &#9662</option>
+						<option value="freshman"> Freshman </option>
+						<option value="sophmore"> Sophmore </option>
+						<option value="junior"> Junior </option>
+						<option value="senior"> Senior </option>
+					</select>
+				</label>
+				<label class="top"> Phone<input type="tel" name="phone" placeholder="8015557890" required></label>
+				<label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com"
+						required></label>
+
+			</fieldset>
+			<!-- SWAG INFORMATION -->
+			<fieldset>
+				<legend>Meeting Information</legend>
+				<label class="top"> When <input type="date" name="completeDate"></label>
+				<label class="top">Reason <input type="text" name="fname"></label>
+
+				<div>Time</div>
+				<label class="sbs"><input type="radio" name="audience" value="30min"> 30 minutes </label>
+				<label class="sbs"><input type="radio" name="audience" value="60min"> 60 minutes </label>
+
+
+
+			</fieldset>
+
+			<!-- SUBMIT BUTTON -->
+			<input type="submit" value="Schedule Meeting" class="submitBtn">
+
+		</form>
+
+        <section id="contact">
+
+            <div>
+                <h3>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h3>
+
+                <p>4211 Dozier Street</p>
+                <p>Los Angeles, CA 90063</p>
+                <p><b>Phone</b>: (323) 265-6830 | <b>Fax</b>: (323) 265-6831</p>
+                <p><b>Email</b>: HAAT@lausd.net</p>
+            </div>
+
+            <div class="process">
+                <h3>Social Media</h3>
+
+                <a href="https://www.instagram.com/haat_arts/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper">
+        <footer>
+            <span>
+                <h4>Los Angeles Unified School District</h4>
+                <p><b>Address:</b></p>
+                <p>333 S. Beaudry Ave</p>
+                <p>Los Angeles, CA 900617</p>
+            </span>
+            <span>
+                <p><b>Phone:</b> (213) 241-1000</p>
+            </span>
+        </footer>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- SLICK -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'Ease-out',
+                autoplay: true,
+                autoplaySpeed: 4000
+            })
+        });
+    </script>
+
+    <!-- LAZY LOAD -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".news", threshold: 0
+        });</script>
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

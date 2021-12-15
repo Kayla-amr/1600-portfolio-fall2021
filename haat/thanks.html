@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kayla Macias">
+
+    <title>Esteban Torres High School - HAAT</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo.png" alt="logo"
+                    srcset="images/logos/logo1.png 1x, images/logos/logo2.png 2x, images/logos/logo3.png 3x">
+            </figure>
+            <h1>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h1>
+            <h2>ON THE ESTEBAN E. TORRES CAMPUS</h2>
+        </header>
+    </div>
+
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Events</a></li>
+                <li><a href="index.html">Students</a></li>
+                <li><a href="counseling.html">Counseling</a></li>
+                <li><a href="#">Faculty & Staff</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- MAIN -->
+    <main class="clearfix">
+        <h2>Appointment Confirmation</h2>
+        <p>Your appointment has been scheduled! Please bring anything that might be needed for your appointment and we'll see you then.</p>
+
+
+        <section id="contact">
+
+            <div>
+                <h3>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h3>
+
+                <p>4211 Dozier Street</p>
+                <p>Los Angeles, CA 90063</p>
+                <p><b>Phone</b>: (323) 265-6830 | <b>Fax</b>: (323) 265-6831</p>
+                <p><b>Email</b>: HAAT@lausd.net</p>
+            </div>
+
+            <div class="process">
+                <h3>Social Media</h3>
+
+                <a href="https://www.instagram.com/haat_arts/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper">
+        <footer>
+            <span>
+                <h4>Los Angeles Unified School District</h4>
+                <p><b>Address:</b></p>
+                <p>333 S. Beaudry Ave</p>
+                <p>Los Angeles, CA 900617</p>
+            </span>
+            <span>
+                <p><b>Phone:</b> (213) 241-1000</p>
+            </span>
+        </footer>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- SLICK -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'Ease-out',
+                autoplay: true,
+                autoplaySpeed: 4000
+            })
+        });
+    </script>
+
+    <!-- LAZY LOAD -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".news", threshold: 0
+        });</script>
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

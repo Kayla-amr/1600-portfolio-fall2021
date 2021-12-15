@@ -13,12 +13,35 @@ html {
 
 /*----BODY----*/
 body {
-    font-family: "Mulish", sans-serif;
+    font-family: $defaultFont;
     background-color: #f2f2f2;
 }
 
 /*---HEADER----*/
+#headerWrapper{
+    background-color: $primaryColor;
+    padding: 1rem 2%;
+}
 
+header img {
+	float: left;
+	padding-right: 0;
+    margin-right: 2%;
+}
+header h1 {    
+	margin: 0;
+	padding-top: 20px;
+	font-size: 1.5rem;
+}
+header h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: normal;
+}
+header picture.logo{
+	float: left;
+	margin: 0 2% 0 0;
+}
 /*----NAVIGATION----*/
 nav button {
     margin: 0.2rem 2%;
@@ -45,31 +68,288 @@ nav {
 
     ul li a {
         text-decoration: none;
-        color: #a8a8b2;
+        color: #000;
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: row;
     }
     ul li.active a {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.9);
         color: #fff;
     }
     ul li a:hover {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(247, 209, 59, 0.9);
     }
 }
 
+
 /*----MAIN----*/
+	main {
+		background-color: #f2f2f2;
+		padding: 0;
+
+		h2 {
+			margin: 0;
+			padding: 20px 0 0 2%;
+			font-size: 1.8rem;
+			border-bottom: solid 1px #000;
+			
+		}
+
+		/*-------DIVS----------*/
+
+		/*--PICTURE--*/
+		picture {
+			position: relative;
+			object-fit: contain;
+            
+            img{
+                width: 100%;
+                height: 400px;
+            }
+		}
+
+		picture div {
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #f2f2f2;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			padding: 10px;
+		}
+	}
+
+/*----CARDS----*/
+.cards {
+	text-align: center;
+	justify-content: center;
+	padding: 1vw;
+	flex-basis: 100%;
+	/*-----HOVER IMAGE----*/
+	div:nth-child(1) {
+		background-image: url(/images/naviance-blog-logo.jpeg);
+	}
+
+	div:nth-child(2) {
+		background-image: url(/images/schedule.jpg);
+	}
+
+	div:nth-child(3) {
+		background-image: url(/images/tutoring.jpg);
+	}
+
+	div:nth-child(4) {
+		background-image: url(/images/techsupport.jpg);
+	}
+
+	/*-----BACKGROUND COLOR-----*/
+	div:nth-child(1) a {
+		background-color:  $primaryColor;
+	}
+
+	div:nth-child(2) a {
+		background-color:  $primaryColor;
+	}
+
+	div:nth-child(3) a {
+		background-color:  $primaryColor;
+	}
+
+	div:nth-child(4) a {
+		background-color: $primaryColor;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		height: 200px;
+		padding: 0 2%;
+		text-decoration: none;
+		transition: all 0.5s ease-in;
+	}
+
+	div a:hover {
+		background: none;
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+	}
+	a img {
+		padding: 4rem 0 0 0;
+	}
+	a h3 {
+		font-size: 1.2rem;
+		padding: 1rem 0;
+		white-space: nowrap;
+		color: #000;
+	}
+	
+}
+.info {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    padding: .5rem 0%;
+    width: 100%;
+
+	ion-icon.md.hydrated{
+		font-size: 70px;
+		color: #000;
+		padding-top: 40px;
+	}
+}
+
+/*----CONTACT----*/
+.gallery figure {
+	width: 100%;
+	margin: 0;
+	height: 0;
+	padding-bottom: 100%;
+	/* 👆 image height / width * 100% */
+	position: relative;
+  }
+  .gallery figure img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+  }
+  .gallery img{
+	  padding: 5px;
+  }
 
 
+/*----CONTACT----*/
+#contact {
+    background-color: $primaryColor;
+    margin: 0;
+    padding: 0 2%;
+    color: #000;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    div {
+        margin: 10px;
+        padding: 0;
+    }
+    h3 {
+        margin: 0;
+        padding: 10px 0;
+        color: #000;
+    }
 
+    h2 {
+        color: #000;
+    }
+    p {
+        font-size: 14px;
+    }
+
+	ion-icon.md.hydrated{
+		font-size: 70px;
+		color: #000;
+	}
+	
+}
+
+/*----------- Couselor Page --------------*/
+.counselorinfo{
+	padding-top: 20px;
+	text-align: center;
+}
+
+/*----------- FORM --------------*/
+form fieldset{
+	margin: 2rem 0;
+	border: 1px solid $primaryColor;
+	border-radius: 10px;
+	padding: .5rem 2%;
+  }
+  
+  form legend{
+	color: darken(#000, 10%);
+	margin: 0 1rem;
+	padding: 0 .5rem;
+  }
+  
+  form label.top, form div{
+	display: block;
+	padding-top: 1rem;
+	color: #333;
+	font-size: .8rem;
+  }
+  
+  form label.top input, form label.top select{
+	-webkit-appearance: none;
+	display: block;
+	font-size: 1rem;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: .74rem;
+	color: #555;
+	width: 100%;
+	max-width: 20rem;
+	background: rgba(110, 110, 110, 0.1);
+  }
+  
+  form label.sbs{
+	display: block;
+	padding: .75rem 0;
+	color: #555;
+	input{
+	  margin-top:0;
+	}
+  
+  }
+  
+  form input.submitBtn{
+	border: none;
+	background-color: #000;
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	font-size: 18px;
+	width: 96%;
+	max-width: 20rem;
+	
+  }
+  
+  form label.top input:required{
+	border-left: red solid 6px;
+  }
+  
+  form label.top input:required:valid{
+	border-left: green solid 6px;
+  }
+  
 
 /*----FOOTER----*/
 #footerWrapper {
-
+background-color: #000;
     footer {
         padding: 10px 2%;
+		color: #f2f2f2;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		span{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		h4 {
+			margin: 0;
+			padding: 10px 0;
+			color: #f2f2f2;
+		}
+		p {
+			margin: 0;
+			font-size: 14px;
+		}
     }
+}
+
+/*--FIXED ISSUES--*/
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

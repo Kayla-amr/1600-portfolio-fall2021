@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Fill Me In">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Kayla Macias">
 
-    <title>Blue River Studios</title>
+    <title>Esteban Torres High School - HAAT</title>
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,8 +19,11 @@
 <body>
     <!-- HEADER HERE -->
     <div id="headerWrapper">
-        <header>
-            <img src="images/Logo.png" alt="Logo">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo.png" alt="logo"
+                    srcset="images/logos/logo1.png 1x, images/logos/logo2.png 2x, images/logos/logo3.png 3x">
+            </figure>
             <h1>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h1>
             <h2>ON THE ESTEBAN E. TORRES CAMPUS</h2>
         </header>
@@ -33,9 +36,9 @@
             <button onclick="toggleMenu()">&#9776;</button>
 
             <ul id="primaryNav" class="hide">
-                <li><a href="#">Event Tickets</a></li>
+                <li><a href="#">Events</a></li>
                 <li class="active"><a href="#">Students</a></li>
-                <li><a href="#">Counseling</a></li>
+                <li><a href="counseling.html">Counseling</a></li>
                 <li><a href="#">Faculty & Staff</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -44,83 +47,175 @@
 
 
 
-    <!-- CONTENT HERE -->
+    <!-- MAIN -->
     <main class="clearfix">
 
-        <figure class="hero">
-            <img src="images/Banner.png">
-        </figure>
-
-            <h2>STUDENTS</h2>
-
-            <div class="flexed cards">
-                <div class="info">
-                    <a href="#">
-                        <ion-icon name="document-outline"></ion-icon>
-                        <h3>Student Login</h3>
-                    </a>
+        <!-- SLIDER -->
+        <div class="my_slider">
+            <picture>
+                <source srcset="/images/sliders/highschoolsmall.jpg" media="(max-width:28.12rem)">
+                <source srcset="/images/sliders/highschool.jpg" media="(min-width:28.12rem)">
+                <img src="/images/sliders/highschool.jpg" alt="">
+                <div><b>About</b><br>
+                    The Humanitas Academy of Art & Technology is an LAUSD Pilot
+                    High School on the Esteban E. Torres campus, serving Grades
+                    9-12. Please email us for more information! HAAT@LAUSD.NET
                 </div>
+            </picture>
 
-                <div class="info">
-                    <a href="#">
-                        <ion-icon name="time-outline"></ion-icon>
-                        <h3>Daily Schedule</h3>
-                    </a>
+            <picture>
+                <source srcset="images/sliders/vaccinatedsmall.jpg" media="(max-width:28.12rem)">
+                <source srcset="images/sliders/vaccinated.jpg" media="(min-width:28.12rem)">
+                <img src="images/sliders/vaccinated.jpg" alt="">
+                <div><b>Have you already been vaccinated against COVID-19?</b><br>
+                    It’s essential that you upload your vaccination card to the
+                    daily pass website ASAP! Click here for more information and a step by step on how to upload!
                 </div>
+            </picture>
 
-                <div class="info">
-                    <a href="#">
-                        <ion-icon name="people-outline"></ion-icon>
-                        <h3>Tutoring</h3>
-                    </a>
-                </div>
+            <picture>
+                <source srcset="images/sliders/tutorschedulesmall.jpg" media="(max-width:28.12rem)">
+                <source srcset="images/sliders/tutorschedule.jpg" media="(min-width:28.12rem)">
+                <img src="images/sliders/tutorschedule.jpg" alt="">
+                <div><b>Study Hall, Tutoring, Counseling and Tech Support 2021-2022</b><br>
+                    We have provided a list of places available for HAAT students to get help with schoolwork,
+                    meet with a counselor, get tech support or to have a quiet place to do homework. </div>
+            </picture>
 
-                <div class="info">
-                    <a href="#">
-                        <ion-icon name="laptop-outline"></ion-icon>
-                        <h3>Tech Support</h3>
-                    </a>
-                </div>
+            <picture>
+                <source srcset="images/sliders/techsupportssmall.jpg" media="(max-width:28.12rem)">
+                <source srcset="images/sliders/techsupports.jpg" media="(min-width:28.12rem)">
+                <img src="images/sliders/techsupports.jpg" alt="">
+                <div><b>Having Technology Problems?</b><br>
+                    Tech support is available each day on campus from 8:15 am - 9:15 am Monday - Friday
+                    and in the afternoon from 1:50 pm - 4:15 pm on Mondays and from 2:30 pm - 4:15 pm on
+                    Tuesday through Friday. Please do not come to campus for tech support during Period 1-4
+                    or Advisory time. </div>
+            </picture>
+            <picture>
+                <source srcset="images/sliders/specialeducationsmall.jpg" media="(max-width:28.12rem)">
+                <source srcset="images/sliders/specialeducation.jpg" media="(min-width:28.12rem)">
+                <img src="images/sliders/specialeducation.jpg" alt="">
+                <div><b>Special Education</b><br>
+                    We provide a full inclusion program for students with IEPs. Please contact us to learn more about
+                    how we meet students' needs by providing accommodations and professional support in general
+                    education
+                    classes.</div>
+            </picture>
+
+        </div>
+
+
+
+        <!-- CARDS -->
+        <h2>STUDENTS</h2>
+        <div class="flexed cards">
+            <div class="info">
+                <a href="#">
+                    <ion-icon name="document-outline"></ion-icon>
+                    <h3>Student Login</h3>
+                </a>
             </div>
 
+            <div class="info">
+                <a href="#">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <h3>Daily Schedule</h3>
+                </a>
+            </div>
 
+            <div class="info">
+                <a href="#">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h3>Tutoring</h3>
+                </a>
+            </div>
 
-        <section id="highlights">
+            <div class="info">
+                <a href="#">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <h3>Tech Support</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- NEWS -->
+        <h2>NEWS</h2>
+        <section class="gallery clearfix">
+            <figure><img alt="covid" class="news" data-src="images/news/news1.jpg"></figure>
+            <figure><img alt="covid" class="news" data-src="images/news/news2.jpg"></figure>
+            <figure><img alt="covid" class="news" data-src="images/news/news3.jpg"></figure>
+            <figure><img alt="covid" class="news" data-src="images/news/news4.jpg"></figure>
+            <figure><img alt="covid" class="news" data-src="images/news/news5.jpg"></figure>
+            <figure><img alt="covid" class="news" data-src="images/news/news6.jpg"></figure>
+        </section>
+
+        <section id="contact">
 
             <div>
                 <h3>HUMANITAS ACADEMY OF ART & TECHNOLOGY</h3>
 
                 <p>4211 Dozier Street</p>
                 <p>Los Angeles, CA 90063</p>
-                <p>Phone: (323) 265-6830 | Fax: (323) 265-6831</p>
-                <p>Email: HAAT@lausd.net</p>
+                <p><b>Phone</b>: (323) 265-6830 | <b>Fax</b>: (323) 265-6831</p>
+                <p><b>Email</b>: HAAT@lausd.net</p>
             </div>
 
             <div class="process">
                 <h3>Social Media</h3>
 
-                <h2>@HAATofficial</h2>
+                <a href="https://www.instagram.com/haat_arts/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
 
             </div>
         </section>
 
     </main>
-
     <!-- FOOTER HERE -->
     <div id="footerWrapper">
         <footer>
             <span>
                 <h4>Los Angeles Unified School District</h4>
-                <p>Address:</p>
+                <p><b>Address:</b></p>
                 <p>333 S. Beaudry Ave</p>
                 <p>Los Angeles, CA 900617</p>
             </span>
             <span>
-                <p>Phone: (213) 241-1000</p>
+                <p><b>Phone:</b> (213) 241-1000</p>
             </span>
         </footer>
     </div>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript -->
     <script src="js/scripts.js"></script>
+
+    <!-- SLICK -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'Ease-out',
+                autoplay: true,
+                autoplaySpeed: 4000
+            })
+        });
+    </script>
+
+    <!-- LAZY LOAD -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".news", threshold: 0
+        });</script>
+
+    <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 

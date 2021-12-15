@@ -350,7 +350,7 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
-  color: #a8a8b2; }
+  color: #000; }
 
 nav nav button {
   margin: 0.2rem 2%;
@@ -373,6 +373,8 @@ nav ul li.active a {
   color: #fff; }
 nav ul li a:hover {
   background-color: rgba(247, 209, 59, 0.9); }
+nav ul.hide {
+  display: none; }
 
 /*----MAIN----*/
 main {

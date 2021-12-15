@@ -48,7 +48,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #a8a8b2;
+    color: #000;
 }
 nav { 
 
@@ -79,6 +79,9 @@ nav {
     }
     ul li a:hover {
         background-color: rgba(247, 209, 59, 0.9);
+    }
+	ul.hide {
+        display: none;
     }
 }
 

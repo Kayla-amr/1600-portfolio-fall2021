@@ -408,13 +408,13 @@ main {
   /*-----HOVER IMAGE----*/
   /*-----BACKGROUND COLOR-----*/ }
   .cards div:nth-child(1) {
-    background-image: url(../images/naviance-blog-logo.jpeg); }
+    background-image: url(images/naviance-blog-logo.jpeg); }
   .cards div:nth-child(2) {
-    background-image: url(../images/schedule.jpg); }
+    background-image: url(images/schedule.jpg); }
   .cards div:nth-child(3) {
-    background-image: url(../images/tutoring.jpg); }
+    background-image: url(images/tutoring.jpg); }
   .cards div:nth-child(4) {
-    background-image: url(../images/techsupport.jpg); }
+    background-image: url(images/techsupport.jpg); }
   .cards div:nth-child(1) a {
     background-color: #F7D13B; }
   .cards div:nth-child(2) a {

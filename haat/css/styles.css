@@ -858,6 +858,7 @@ form label.top input:required:valid {
     flex-basis: auto; }
 
   /*----------- MAIN --------------*/
+  /*----------- gallery --------------*/
   .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

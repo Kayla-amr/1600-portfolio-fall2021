@@ -325,14 +325,19 @@ body {
   background-color: #F7D13B;
   padding: 1rem 2%; }
 
-header img {
-  float: left;
-  padding-right: 0;
-  margin-right: 2%; }
+header {
+  padding: .5rem 2%;
+  display: grid;
+  grid-template-columns: 105px auto; }
+  header .logo {
+    margin: 0; }
+  header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 header h1 {
   margin: 0;
-  padding-top: 20px;
   font-size: 1.5rem; }
 
 header h2 {

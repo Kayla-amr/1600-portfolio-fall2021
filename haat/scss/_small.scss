@@ -1,44 +1,43 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*----BODY----*/
 body {
-    font-family: $defaultFont;
-    background-color: #f2f2f2;
+	font-family: $defaultFont;
+	background-color: #f2f2f2;
 }
 
 /*---HEADER----*/
-#headerWrapper{
-    background-color: $primaryColor;
-    padding: 1rem 2%;
+#headerWrapper {
+	background-color: $primaryColor;
+	padding: 1rem 2%;
 }
 
-header  {
+header {
 	padding: .5rem 2%;
 	display: grid;
 	grid-template-columns: 105px auto;
 
-	.logo{
+	.logo {
 		margin: 0;
 	}
-	div{
+	div {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		
 	}
 }
-header h1 {    
+header h1 {
 	margin: 0;
 	font-size: 1.5rem;
 }
@@ -47,89 +46,86 @@ header h2 {
 	font-size: 1rem;
 	font-weight: normal;
 }
-header picture.logo{
+header picture.logo {
 	float: left;
 	margin: 0 2% 0 0;
 }
 /*----NAVIGATION----*/
 nav button {
-    margin: 0.2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #000;
+	margin: 0.2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #000;
 }
-nav { 
+nav {
+	nav button {
+		margin: 0.2rem 2%;
+		background-color: transparent;
+		border: none;
+		font-size: 1.6rem;
+		color: black;
+	}
 
-    nav button {
-        margin: 0.2rem 2%;
-        background-color: transparent;
-        border: none;
-        font-size: 1.6rem;
-        color: black;
-    }
+	ul {
+		list-style-type: none;
+		padding-left: 1.6rem;
+		margin: 0;
+	}
 
-    ul {
-        list-style-type: none;
-        padding-left: 1.6rem;
-        margin: 0;
-    }
-
-    ul li a {
-        text-decoration: none;
-        color: #000;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
-        display: flex;
-        flex-direction: row;
-    }
-    ul li.active a {
-        background-color: rgba(0, 0, 0, 0.9);
-        color: #fff;
-    }
-    ul li a:hover {
-        background-color: rgba(247, 209, 59, 0.9);
-    }
+	ul li a {
+		text-decoration: none;
+		color: #000;
+		border-top: 1px solid rgba(0, 0, 0, 0.3);
+		display: flex;
+		flex-direction: row;
+	}
+	ul li.active a {
+		background-color: rgba(0, 0, 0, 0.9);
+		color: #fff;
+	}
+	ul li a:hover {
+		background-color: rgba(247, 209, 59, 0.9);
+	}
 	ul.hide {
-        display: none;
-    }
+		display: none;
+	}
 }
-
 
 /*----MAIN----*/
-	main {
-		background-color: #fff;
-		padding: 0;
+main {
+	background-color: #fff;
+	padding: 0;
 
-		h2 {
-			margin: 0;
-			padding: 20px 0 0 2%;
-			font-size: 1.8rem;
-			border-bottom: solid 1px #000;
-			
-		}
+	h2 {
+		margin: 0;
+		padding: 20px 0 0 2%;
+		font-size: 1.8rem;
+		border-bottom: solid 1px #000;
+	}
 
-		/*-------DIVS----------*/
+	/*-------DIVS----------*/
 
-		/*--PICTURE--*/
-		picture {
-			position: relative;
-			object-fit: contain;
-            
-            img{
-                width: 100%;
-                height: 400px;
-            }
-		}
+	/*--PICTURE--*/
+	picture {
+		position: relative;
+		object-fit: contain;
 
-		picture div {
-			background-color: rgba(0, 0, 0, 0.6);
-			color: #f2f2f2;
-			position: absolute;
-			bottom: 0;
-			margin: 0;
-			padding: 10px;
+		img {
+			width: 100%;
+			height: 400px;
 		}
 	}
+
+	picture div {
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #f2f2f2;
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		padding: 10px;
+	}
+}
 
 /*----CARDS----*/
 .cards {
@@ -156,15 +152,15 @@ nav {
 
 	/*-----BACKGROUND COLOR-----*/
 	div:nth-child(1) a {
-		background-color:  $primaryColor;
+		background-color: $primaryColor;
 	}
 
 	div:nth-child(2) a {
-		background-color:  $primaryColor;
+		background-color: $primaryColor;
 	}
 
 	div:nth-child(3) a {
-		background-color:  $primaryColor;
+		background-color: $primaryColor;
 	}
 
 	div:nth-child(4) a {
@@ -193,17 +189,16 @@ nav {
 		white-space: nowrap;
 		color: #000;
 	}
-	
 }
 .info {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: content-box;
-    padding: .5rem 0%;
-    width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	padding: .5rem 0%;
+	width: 100%;
 
-	ion-icon.md.hydrated{
+	ion-icon.md.hydrated {
 		font-size: 70px;
 		color: #000;
 		padding-top: 40px;
@@ -218,77 +213,77 @@ nav {
 	padding-bottom: 100%;
 	/* 👆 image height / width * 100% */
 	position: relative;
-  }
-  .gallery figure img {
+}
+.gallery figure img {
 	width: 100%;
 	height: auto;
 	position: absolute;
-  }
-  .gallery img{
-	  padding: 5px;
-  }
-
+}
+.gallery img {
+	padding: 5px;
+}
 
 /*----CONTACT----*/
 #contact {
-    background-color: $primaryColor;
-    margin: 0;
-    padding: 0 2%;
-    color: #000;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    div {
-        margin: 10px;
-        padding: 0;
-    }
-    h3 {
-        margin: 0;
-        padding: 10px 0;
-        color: #000;
-    }
+	background-color: $primaryColor;
+	margin: 0;
+	padding: 0 2%;
+	color: #000;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	div {
+		margin: 10px;
+		padding: 0;
+	}
+	h3 {
+		margin: 0;
+		padding: 10px 0;
+		color: #000;
+	}
 
-    h2 {
-        color: #000;
-    }
-    p {
-        font-size: 14px;
-    }
+	h2 {
+		color: #000;
+	}
+	p {
+		font-size: 14px;
+	}
 
-	ion-icon.md.hydrated{
+	ion-icon.md.hydrated {
 		font-size: 70px;
 		color: #000;
 	}
-	
 }
 
 /*----------- Couselor Page --------------*/
-.counselorinfo{
+.counselorinfo {
 	padding-top: 20px;
 	text-align: center;
 }
 
 /*----------- FORM --------------*/
-form fieldset{
+form fieldset {
 	margin: 2rem 0;
 	border: 1px solid $primaryColor;
 	border-radius: 10px;
 	padding: .5rem 2%;
-  }
-  
-  form legend{
+}
+
+form legend {
 	color: darken(#000, 10%);
 	margin: 0 1rem;
 	padding: 0 .5rem;
-  }
-  
-  form label.top, form div{
+}
+
+form label.top,
+form div {
 	display: block;
 	padding-top: 1rem;
 	color: #333;
 	font-size: .8rem;
-  }
-  
-  form label.top input, form label.top select{
+}
+
+form label.top input,
+form label.top select {
 	-webkit-appearance: none;
 	display: block;
 	font-size: 1rem;
@@ -299,19 +294,18 @@ form fieldset{
 	width: 100%;
 	max-width: 20rem;
 	background: rgba(110, 110, 110, 0.1);
-  }
-  
-  form label.sbs{
+}
+
+form label.sbs {
 	display: block;
 	padding: .75rem 0;
 	color: #555;
-	input{
-	  margin-top:0;
+	input {
+		margin-top: 0;
 	}
-  
-  }
-  
-  form input.submitBtn{
+}
+
+form input.submitBtn {
 	border: none;
 	background-color: #000;
 	color: white;
@@ -321,27 +315,25 @@ form fieldset{
 	font-size: 18px;
 	width: 96%;
 	max-width: 20rem;
-	
-  }
-  
-  form label.top input:required{
+}
+
+form label.top input:required {
 	border-left: red solid 6px;
-  }
-  
-  form label.top input:required:valid{
+}
+
+form label.top input:required:valid {
 	border-left: green solid 6px;
-  }
-  
+}
 
 /*----FOOTER----*/
 #footerWrapper {
-background-color: #000;
-    footer {
-        padding: 10px 2%;
+	background-color: #000;
+	footer {
+		padding: 10px 2%;
 		color: #f2f2f2;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		span{
+		span {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -355,7 +347,7 @@ background-color: #000;
 			margin: 0;
 			font-size: 14px;
 		}
-    }
+	}
 }
 
 /*--FIXED ISSUES--*/
@@ -366,7 +358,7 @@ background-color: #000;
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
